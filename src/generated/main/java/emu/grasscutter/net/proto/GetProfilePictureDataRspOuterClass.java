@@ -721,16 +721,14 @@ public final class GetProfilePictureDataRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036GetProfilePictureDataRsp.proto\032\024Player" +
-      "HeadIcon.proto\"Q\n\030GetProfilePictureDataR" +
-      "sp\022$\n\034special_profile_picture_list\030\007 \003(\r" +
-      "\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\036GetProfilePictureDataRsp.proto\"Q\n\030GetP" +
+      "rofilePictureDataRsp\022$\n\034special_profile_" +
+      "picture_list\030\007 \003(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PlayerHeadIconOuterClass.getDescriptor(),
         });
     internal_static_GetProfilePictureDataRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -738,7 +736,6 @@ public final class GetProfilePictureDataRspOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetProfilePictureDataRsp_descriptor,
         new java.lang.String[] { "SpecialProfilePictureList", "Retcode", });
-    emu.grasscutter.net.proto.PlayerHeadIconOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
