@@ -179,6 +179,12 @@ public final class PacketOpcodes {
     public static final int TakeoffEquipReq = 26274;
     public static final int TakeoffEquipRsp = 3147;
     public static final int PlayerSetPauseRsp = 25525;
+    public static final int GetGachaInfoReq = 2098;
+    public static final int GetGachaInfoRsp = 26742;
+    public static final int DoGachaReq = 1018;
+    public static final int DoGachaRsp = 27578;
+    public static final int GachaWishReq = 5636;
+    public static final int GachaWishRsp = 26208;
 
     // 4.7.0 Obfuscated
 
@@ -189,12 +195,6 @@ public final class PacketOpcodes {
     public static final int SceneEntityUpdateNotify = 1;
     public static final int DestroyMaterialReq = 1;
     public static final int DestroyMaterialRsp = 1;
-    public static final int GetGachaInfoReq = 1;
-    public static final int GetGachaInfoRsp = 1;
-    public static final int DoGachaReq = 1;
-    public static final int DoGachaRsp = 1;
-    public static final int GachaWishReq = 1;
-    public static final int GachaWishRsp = 1;
     public static final int EvtCreateGadgetNotify = 1;
     public static final int GetActivityInfoRsp = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;

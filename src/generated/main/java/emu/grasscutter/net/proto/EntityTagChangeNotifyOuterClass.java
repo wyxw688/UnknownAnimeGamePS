@@ -745,15 +745,14 @@ public final class EntityTagChangeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033EntityTagChangeNotify.proto\032\013Quest.pro" +
-      "to\"G\n\025EntityTagChangeNotify\022\021\n\tentity_id" +
-      "\030\007 \001(\r\022\013\n\003tag\030\016 \001(\t\022\016\n\006is_add\030\017 \001(\010B\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\n\033EntityTagChangeNotify.proto\"G\n\025EntityT" +
+      "agChangeNotify\022\021\n\tentity_id\030\007 \001(\r\022\013\n\003tag" +
+      "\030\016 \001(\t\022\016\n\006is_add\030\017 \001(\010B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.QuestOuterClass.getDescriptor(),
         });
     internal_static_EntityTagChangeNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -761,7 +760,6 @@ public final class EntityTagChangeNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityTagChangeNotify_descriptor,
         new java.lang.String[] { "EntityId", "Tag", "IsAdd", });
-    emu.grasscutter.net.proto.QuestOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
