@@ -19,56 +19,24 @@ public final class GetPlayerTokenReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-<<<<<<< HEAD
      * <code>string client_rand_key = 204;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The clientRandKey.
      */
     java.lang.String getClientRandKey();
     /**
-<<<<<<< HEAD
      * <code>string client_rand_key = 204;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The bytes for clientRandKey.
      */
     com.google.protobuf.ByteString
         getClientRandKeyBytes();
 
     /**
-<<<<<<< HEAD
      * <code>string account_uid = 10;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The accountUid.
      */
     java.lang.String getAccountUid();
     /**
-<<<<<<< HEAD
      * <code>string account_uid = 10;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The bytes for accountUid.
      */
     com.google.protobuf.ByteString
@@ -385,15 +353,7 @@ public final class GetPlayerTokenReqOuterClass {
     public static final int CLIENT_RAND_KEY_FIELD_NUMBER = 204;
     private volatile java.lang.Object clientRandKey_;
     /**
-<<<<<<< HEAD
      * <code>string client_rand_key = 204;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The clientRandKey.
      */
     @java.lang.Override
@@ -410,15 +370,7 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
     /**
-<<<<<<< HEAD
      * <code>string client_rand_key = 204;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The bytes for clientRandKey.
      */
     @java.lang.Override
@@ -439,15 +391,7 @@ public final class GetPlayerTokenReqOuterClass {
     public static final int ACCOUNT_UID_FIELD_NUMBER = 10;
     private volatile java.lang.Object accountUid_;
     /**
-<<<<<<< HEAD
      * <code>string account_uid = 10;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The accountUid.
      */
     @java.lang.Override
@@ -464,15 +408,7 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
     /**
-<<<<<<< HEAD
      * <code>string account_uid = 10;</code>
-=======
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
-     * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
      * @return The bytes for accountUid.
      */
     @java.lang.Override
@@ -1398,15 +1334,7 @@ public final class GetPlayerTokenReqOuterClass {
 
       private java.lang.Object clientRandKey_ = "";
       /**
-<<<<<<< HEAD
        * <code>string client_rand_key = 204;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return The clientRandKey.
        */
       public java.lang.String getClientRandKey() {
@@ -1422,15 +1350,7 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-<<<<<<< HEAD
        * <code>string client_rand_key = 204;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return The bytes for clientRandKey.
        */
       public com.google.protobuf.ByteString
@@ -1447,15 +1367,7 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-<<<<<<< HEAD
        * <code>string client_rand_key = 204;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @param value The clientRandKey to set.
        * @return This builder for chaining.
        */
@@ -1470,15 +1382,7 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-<<<<<<< HEAD
        * <code>string client_rand_key = 204;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return This builder for chaining.
        */
       public Builder clearClientRandKey() {
@@ -1488,15 +1392,7 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-<<<<<<< HEAD
        * <code>string client_rand_key = 204;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string client_rand_key = 514;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @param value The bytes for clientRandKey to set.
        * @return This builder for chaining.
        */
@@ -1514,15 +1410,7 @@ public final class GetPlayerTokenReqOuterClass {
 
       private java.lang.Object accountUid_ = "";
       /**
-<<<<<<< HEAD
        * <code>string account_uid = 10;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return The accountUid.
        */
       public java.lang.String getAccountUid() {
@@ -1538,15 +1426,7 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-<<<<<<< HEAD
        * <code>string account_uid = 10;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return The bytes for accountUid.
        */
       public com.google.protobuf.ByteString
@@ -1563,15 +1443,7 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-<<<<<<< HEAD
        * <code>string account_uid = 10;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @param value The accountUid to set.
        * @return This builder for chaining.
        */
@@ -1586,15 +1458,7 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-<<<<<<< HEAD
        * <code>string account_uid = 10;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @return This builder for chaining.
        */
       public Builder clearAccountUid() {
@@ -1604,15 +1468,7 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-<<<<<<< HEAD
        * <code>string account_uid = 10;</code>
-=======
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
-       * <code>string account_uid = 14;</code>
->>>>>>> parent of 676302c9a (Database code optimization)
        * @param value The bytes for accountUid to set.
        * @return This builder for chaining.
        */

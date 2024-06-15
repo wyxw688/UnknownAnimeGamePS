@@ -176,6 +176,9 @@ public final class PacketOpcodes {
     public static final int ItemGivingRsp = 8905;
     public static final int DropHintNotify = 9366;
     public static final int ScenePointUnlockNotify = 5540;
+    public static final int TakeoffEquipReq = 26274;
+    public static final int TakeoffEquipRsp = 3147;
+    public static final int PlayerSetPauseRsp = 25525;
 
     // 4.7.0 Obfuscated
 
@@ -204,8 +207,6 @@ public final class PacketOpcodes {
     public static final int HitTreeNotify = 1;
     public static final int SetEntityClientDataNotify = 1;
     public static final int WorldPlayerLocationNotify = 1;
-    public static final int TakeoffEquipReq = 1;
-    public static final int TakeoffEquipRsp = 1;
     public static final int ObstacleModifyNotify = 1;
     public static final int WeaponUpgradeReq = 1;
     public static final int WeaponUpgradeRsp = 1;
@@ -1610,7 +1611,6 @@ public final class PacketOpcodes {
     public static final int PlayerSetLanguageRsp = 1;
     public static final int PlayerSetOnlyMPWithPSPlayerReq = 1;
     public static final int PlayerSetOnlyMPWithPSPlayerRsp = 1;
-    public static final int PlayerSetPauseRsp = 1;
     public static final int PlayerSignatureAuditDataNotify = 1;
     public static final int PlayerSignatureNotify = 1;
     public static final int PlayerStartMatchReq = 1;
