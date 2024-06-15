@@ -60,6 +60,22 @@ public final class PacketOpcodes {
     public static final int ChangeAvatarRsp = 21804;
     public static final int SceneEntityDisappearNotify = 7872;
     public static final int AvatarTeamUpdateNotify = 4042;
+    public static final int GetAllUnlockNameCardReq = 26933;
+    public static final int GetAllUnlockNameCardRsp = 22367;
+    public static final int PersonalSceneJumpRsp = 9709;
+    public static final int HostPlayerNotify = 23063;
+    public static final int DungeonSettleNotify = 3857;
+    public static final int GetAuthkeyRsp = 383;
+    public static final int AvatarTeamAllDataNotify = 26224;
+    public static final int MonsterAlertChangeNotify = 20074;
+    public static final int OpenStateChangeNotify = 21245;
+    public static final int SetNameCardReq = 27523;
+    public static final int SetNameCardRsp = 1442;
+    public static final int GetProfilePictureDataReq = 1648;
+    public static final int GetProfilePictureDataRsp = 6565;
+    public static final int ProfilePictureUpdateNotify = 24838;
+    public static final int SetPlayerHeadImageReq = 8629;
+    public static final int SetPlayerHeadImageRsp = 24577;
 
     // 4.7.0 Obfuscated
 
@@ -118,8 +134,6 @@ public final class PacketOpcodes {
     public static final int SetEquipLockStateRsp = 1;
     public static final int GetActivityInfoRsp = 1;
     public static final int AbilityInvocationsNotify = 1;
-    public static final int SetNameCardReq = 1;
-    public static final int SetNameCardRsp = 1;
     public static final int UpdatePlayerShowNameCardListReq = 1;
     public static final int UpdatePlayerShowNameCardListRsp = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;
@@ -157,7 +171,6 @@ public final class PacketOpcodes {
     public static final int WeaponAwakenReq = 1;
     public static final int WeaponAwakenRsp = 1;
     public static final int PersonalSceneJumpReq = 1;
-    public static final int PersonalSceneJumpRsp = 1;
     public static final int GetWidgetQuickSlotListReq = 1;
     public static final int CardProductRewardNotify = 1;
     public static final int TakePlayerLevelRewardReq = 1;
@@ -179,7 +192,6 @@ public final class PacketOpcodes {
     public static final int DungeonEntryToBeExploreNotify = 1;
     public static final int GetDungeonEntryExploreConditionReq = 1;
     public static final int GetDungeonEntryExploreConditionRsp = 1;
-    public static final int DungeonSettleNotify = 1;
     public static final int TowerLevelEndNotify = 1;
     public static final int TrialAvatarFirstPassDungeonNotify = 1;
     public static final int QuestUpdateQuestVarReq = 1;
@@ -307,7 +319,6 @@ public final class PacketOpcodes {
     public static final int AvatarSkillMaxChargeCountNotify = 1;
     public static final int AvatarSkillUpgradeReq = 1;
     public static final int AvatarSkillUpgradeRsp = 1;
-    public static final int AvatarTeamAllDataNotify = 1;
     public static final int AvatarUnlockTalentNotify = 1;
     public static final int AvatarUpgradeReq = 1;
     public static final int AvatarUpgradeRsp = 1;
@@ -988,14 +999,11 @@ public final class PacketOpcodes {
     public static final int GetAllMailRsp = 1;
     public static final int GetAllSceneGalleryInfoReq = 1;
     public static final int GetAllSceneGalleryInfoRsp = 1;
-    public static final int GetAllUnlockNameCardReq = 1;
-    public static final int GetAllUnlockNameCardRsp = 1;
     public static final int GetAreaExplorePointReq = 1;
     public static final int GetAreaExplorePointRsp = 1;
     public static final int GetAuthSalesmanInfoReq = 1;
     public static final int GetAuthSalesmanInfoRsp = 1;
     public static final int GetAuthkeyReq = 1;
-    public static final int GetAuthkeyRsp = 1;
     public static final int GetBargainDataReq = 1;
     public static final int GetBargainDataRsp = 1;
     public static final int GetBattlePassProductReq = 1;
@@ -1247,7 +1255,6 @@ public final class PacketOpcodes {
     public static final int HomeUpdatePictureFrameInfoRsp = 1;
     public static final int HomeUpdateScenePointFishFarmingInfoReq = 1;
     public static final int HomeUpdateScenePointFishFarmingInfoRsp = 1;
-    public static final int HostPlayerNotify = 1;
     public static final int HuntingFailNotify = 1;
     public static final int HuntingGiveUpReq = 1;
     public static final int HuntingGiveUpRsp = 1;
@@ -1410,7 +1417,6 @@ public final class PacketOpcodes {
     public static final int MistTrialSelectAvatarAndEnterDungeonRsp = 1;
     public static final int MistTrialSettleNotify = 1;
     public static final int MonsterAIConfigHashNotify = 1;
-    public static final int MonsterAlertChangeNotify = 1;
     public static final int MonsterForceAlertNotify = 1;
     public static final int MonsterPointArrayRouteUpdateNotify = 1;
     public static final int MonsterSummonTagNotify = 1;
@@ -1456,7 +1462,6 @@ public final class PacketOpcodes {
     public static final int OpActivityStateNotify = 1;
     public static final int OpActivityUpdateNotify = 1;
     public static final int OpenBlossomCircleCampGuideNotify = 1;
-    public static final int OpenStateChangeNotify = 1;
     public static final int OrderDisplayNotify = 1;
     public static final int OrderFinishNotify = 1;
     public static final int OtherPlayerEnterHomeNotify = 1;
@@ -1853,8 +1858,6 @@ public final class PacketOpcodes {
     public static final int SetOpenStateRsp = 1;
     public static final int SetPlayerBornDataReq = 1;
     public static final int SetPlayerBornDataRsp = 1;
-    public static final int SetPlayerHeadImageReq = 1;
-    public static final int SetPlayerHeadImageRsp = 1;
     public static final int SetPlayerPropReq = 1;
     public static final int SetPlayerPropRsp = 1;
     public static final int SetSceneWeatherAreaReq = 1;
