@@ -39,7 +39,6 @@ public final class SkipPlayerGameTimeReqOuterClass {
   /**
    * <pre>
    * CmdId: 22076
-   * Obf: DEFBFNOLMID
    * </pre>
    *
    * Protobuf type {@code SkipPlayerGameTimeReq}
@@ -347,7 +346,6 @@ public final class SkipPlayerGameTimeReqOuterClass {
     /**
      * <pre>
      * CmdId: 22076
-     * Obf: DEFBFNOLMID
      * </pre>
      *
      * Protobuf type {@code SkipPlayerGameTimeReq}

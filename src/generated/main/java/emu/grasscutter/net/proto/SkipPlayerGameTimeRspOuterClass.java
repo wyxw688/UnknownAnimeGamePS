@@ -39,7 +39,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
   /**
    * <pre>
    * CmdId: 24529
-   * Obf: PFBBCGKLBFC
    * </pre>
    *
    * Protobuf type {@code SkipPlayerGameTimeRsp}
@@ -346,7 +345,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
     /**
      * <pre>
      * CmdId: 24529
-     * Obf: PFBBCGKLBFC
      * </pre>
      *
      * Protobuf type {@code SkipPlayerGameTimeRsp}

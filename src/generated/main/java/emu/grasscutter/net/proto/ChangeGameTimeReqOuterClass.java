@@ -37,6 +37,10 @@ public final class ChangeGameTimeReqOuterClass {
     int getExtraDays();
   }
   /**
+   * <pre>
+   * CmdId: 23019
+   * </pre>
+   *
    * Protobuf type {@code ChangeGameTimeReq}
    */
   public static final class ChangeGameTimeReq extends
@@ -340,6 +344,10 @@ public final class ChangeGameTimeReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 23019
+     * </pre>
+     *
      * Protobuf type {@code ChangeGameTimeReq}
      */
     public static final class Builder extends

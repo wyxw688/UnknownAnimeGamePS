@@ -19,77 +19,81 @@ public final class LifeStateChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string attack_tag = 12;</code>
+     * <code>uint32 life_state = 2;</code>
+     * @return The lifeState.
+     */
+    int getLifeState();
+
+    /**
+     * <code>uint32 source_entity_id = 4;</code>
+     * @return The sourceEntityId.
+     */
+    int getSourceEntityId();
+
+    /**
+     * <code>string attack_tag = 6;</code>
      * @return The attackTag.
      */
     java.lang.String getAttackTag();
     /**
-     * <code>string attack_tag = 12;</code>
+     * <code>string attack_tag = 6;</code>
      * @return The bytes for attackTag.
      */
     com.google.protobuf.ByteString
         getAttackTagBytes();
 
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> 
         getServerBuffListList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index);
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     int getServerBuffListCount();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
         getServerBuffListOrBuilderList();
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 source_entity_id = 9;</code>
-     * @return The sourceEntityId.
-     */
-    int getSourceEntityId();
-
-    /**
-     * <code>.PlayerDieType die_type = 8;</code>
+     * <code>.PlayerDieType die_type = 11;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     int getDieTypeValue();
     /**
-     * <code>.PlayerDieType die_type = 8;</code>
+     * <code>.PlayerDieType die_type = 11;</code>
      * @return The dieType.
      */
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType();
 
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 life_state = 3;</code>
-     * @return The lifeState.
-     */
-    int getLifeState();
-
-    /**
-     * <code>uint32 move_reliable_seq = 1;</code>
+     * <code>uint32 move_reliable_seq = 15;</code>
      * @return The moveReliableSeq.
      */
     int getMoveReliableSeq();
   }
   /**
+   * <pre>
+   * CmdId: 9435
+   * </pre>
+   *
    * Protobuf type {@code LifeStateChangeNotify}
    */
   public static final class LifeStateChangeNotify extends
@@ -138,45 +142,45 @@ public final class LifeStateChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              moveReliableSeq_ = input.readUInt32();
-              break;
-            }
-            case 24: {
+            case 16: {
 
               lifeState_ = input.readUInt32();
               break;
             }
-            case 56: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-              int rawValue = input.readEnum();
-
-              dieType_ = rawValue;
-              break;
-            }
-            case 72: {
+            case 32: {
 
               sourceEntityId_ = input.readUInt32();
               break;
             }
-            case 98: {
+            case 50: {
               java.lang.String s = input.readStringRequireUtf8();
 
               attackTag_ = s;
               break;
             }
-            case 106: {
+            case 58: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>();
                 mutable_bitField0_ |= 0x00000001;
               }
               serverBuffList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(), extensionRegistry));
+              break;
+            }
+            case 88: {
+              int rawValue = input.readEnum();
+
+              dieType_ = rawValue;
+              break;
+            }
+            case 112: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              moveReliableSeq_ = input.readUInt32();
               break;
             }
             default: {
@@ -214,10 +218,32 @@ public final class LifeStateChangeNotifyOuterClass {
               emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify.class, emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify.Builder.class);
     }
 
-    public static final int ATTACK_TAG_FIELD_NUMBER = 12;
+    public static final int LIFE_STATE_FIELD_NUMBER = 2;
+    private int lifeState_;
+    /**
+     * <code>uint32 life_state = 2;</code>
+     * @return The lifeState.
+     */
+    @java.lang.Override
+    public int getLifeState() {
+      return lifeState_;
+    }
+
+    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 4;
+    private int sourceEntityId_;
+    /**
+     * <code>uint32 source_entity_id = 4;</code>
+     * @return The sourceEntityId.
+     */
+    @java.lang.Override
+    public int getSourceEntityId() {
+      return sourceEntityId_;
+    }
+
+    public static final int ATTACK_TAG_FIELD_NUMBER = 6;
     private volatile java.lang.Object attackTag_;
     /**
-     * <code>string attack_tag = 12;</code>
+     * <code>string attack_tag = 6;</code>
      * @return The attackTag.
      */
     @java.lang.Override
@@ -234,7 +260,7 @@ public final class LifeStateChangeNotifyOuterClass {
       }
     }
     /**
-     * <code>string attack_tag = 12;</code>
+     * <code>string attack_tag = 6;</code>
      * @return The bytes for attackTag.
      */
     @java.lang.Override
@@ -252,17 +278,17 @@ public final class LifeStateChangeNotifyOuterClass {
       }
     }
 
-    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 13;
+    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 7;
     private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
@@ -270,21 +296,21 @@ public final class LifeStateChangeNotifyOuterClass {
       return serverBuffList_;
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     @java.lang.Override
     public int getServerBuffListCount() {
       return serverBuffList_.size();
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
       return serverBuffList_.get(index);
     }
     /**
-     * <code>repeated .ServerBuff server_buff_list = 13;</code>
+     * <code>repeated .ServerBuff server_buff_list = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
@@ -292,28 +318,17 @@ public final class LifeStateChangeNotifyOuterClass {
       return serverBuffList_.get(index);
     }
 
-    public static final int SOURCE_ENTITY_ID_FIELD_NUMBER = 9;
-    private int sourceEntityId_;
-    /**
-     * <code>uint32 source_entity_id = 9;</code>
-     * @return The sourceEntityId.
-     */
-    @java.lang.Override
-    public int getSourceEntityId() {
-      return sourceEntityId_;
-    }
-
-    public static final int DIE_TYPE_FIELD_NUMBER = 8;
+    public static final int DIE_TYPE_FIELD_NUMBER = 11;
     private int dieType_;
     /**
-     * <code>.PlayerDieType die_type = 8;</code>
+     * <code>.PlayerDieType die_type = 11;</code>
      * @return The enum numeric value on the wire for dieType.
      */
     @java.lang.Override public int getDieTypeValue() {
       return dieType_;
     }
     /**
-     * <code>.PlayerDieType die_type = 8;</code>
+     * <code>.PlayerDieType die_type = 11;</code>
      * @return The dieType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType getDieType() {
@@ -322,10 +337,10 @@ public final class LifeStateChangeNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 7;
+    public static final int ENTITY_ID_FIELD_NUMBER = 14;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 7;</code>
+     * <code>uint32 entity_id = 14;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -333,21 +348,10 @@ public final class LifeStateChangeNotifyOuterClass {
       return entityId_;
     }
 
-    public static final int LIFE_STATE_FIELD_NUMBER = 3;
-    private int lifeState_;
-    /**
-     * <code>uint32 life_state = 3;</code>
-     * @return The lifeState.
-     */
-    @java.lang.Override
-    public int getLifeState() {
-      return lifeState_;
-    }
-
-    public static final int MOVE_RELIABLE_SEQ_FIELD_NUMBER = 1;
+    public static final int MOVE_RELIABLE_SEQ_FIELD_NUMBER = 15;
     private int moveReliableSeq_;
     /**
-     * <code>uint32 move_reliable_seq = 1;</code>
+     * <code>uint32 move_reliable_seq = 15;</code>
      * @return The moveReliableSeq.
      */
     @java.lang.Override
@@ -369,26 +373,26 @@ public final class LifeStateChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (moveReliableSeq_ != 0) {
-        output.writeUInt32(1, moveReliableSeq_);
-      }
       if (lifeState_ != 0) {
-        output.writeUInt32(3, lifeState_);
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(7, entityId_);
-      }
-      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        output.writeEnum(8, dieType_);
+        output.writeUInt32(2, lifeState_);
       }
       if (sourceEntityId_ != 0) {
-        output.writeUInt32(9, sourceEntityId_);
+        output.writeUInt32(4, sourceEntityId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(attackTag_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, attackTag_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, attackTag_);
       }
       for (int i = 0; i < serverBuffList_.size(); i++) {
-        output.writeMessage(13, serverBuffList_.get(i));
+        output.writeMessage(7, serverBuffList_.get(i));
+      }
+      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
+        output.writeEnum(11, dieType_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(14, entityId_);
+      }
+      if (moveReliableSeq_ != 0) {
+        output.writeUInt32(15, moveReliableSeq_);
       }
       unknownFields.writeTo(output);
     }
@@ -399,32 +403,32 @@ public final class LifeStateChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (moveReliableSeq_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, moveReliableSeq_);
-      }
       if (lifeState_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, lifeState_);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, entityId_);
-      }
-      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(8, dieType_);
+          .computeUInt32Size(2, lifeState_);
       }
       if (sourceEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, sourceEntityId_);
+          .computeUInt32Size(4, sourceEntityId_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(attackTag_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, attackTag_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, attackTag_);
       }
       for (int i = 0; i < serverBuffList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, serverBuffList_.get(i));
+          .computeMessageSize(7, serverBuffList_.get(i));
+      }
+      if (dieType_ != emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.PLAYER_DIE_TYPE_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(11, dieType_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, entityId_);
+      }
+      if (moveReliableSeq_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, moveReliableSeq_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -441,17 +445,17 @@ public final class LifeStateChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify other = (emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify) obj;
 
+      if (getLifeState()
+          != other.getLifeState()) return false;
+      if (getSourceEntityId()
+          != other.getSourceEntityId()) return false;
       if (!getAttackTag()
           .equals(other.getAttackTag())) return false;
       if (!getServerBuffListList()
           .equals(other.getServerBuffListList())) return false;
-      if (getSourceEntityId()
-          != other.getSourceEntityId()) return false;
       if (dieType_ != other.dieType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getLifeState()
-          != other.getLifeState()) return false;
       if (getMoveReliableSeq()
           != other.getMoveReliableSeq()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -465,20 +469,20 @@ public final class LifeStateChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + getLifeState();
+      hash = (37 * hash) + SOURCE_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSourceEntityId();
       hash = (37 * hash) + ATTACK_TAG_FIELD_NUMBER;
       hash = (53 * hash) + getAttackTag().hashCode();
       if (getServerBuffListCount() > 0) {
         hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getServerBuffListList().hashCode();
       }
-      hash = (37 * hash) + SOURCE_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSourceEntityId();
       hash = (37 * hash) + DIE_TYPE_FIELD_NUMBER;
       hash = (53 * hash) + dieType_;
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + getLifeState();
       hash = (37 * hash) + MOVE_RELIABLE_SEQ_FIELD_NUMBER;
       hash = (53 * hash) + getMoveReliableSeq();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -577,6 +581,10 @@ public final class LifeStateChangeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 9435
+     * </pre>
+     *
      * Protobuf type {@code LifeStateChangeNotify}
      */
     public static final class Builder extends
@@ -615,6 +623,10 @@ public final class LifeStateChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        lifeState_ = 0;
+
+        sourceEntityId_ = 0;
+
         attackTag_ = "";
 
         if (serverBuffListBuilder_ == null) {
@@ -623,13 +635,9 @@ public final class LifeStateChangeNotifyOuterClass {
         } else {
           serverBuffListBuilder_.clear();
         }
-        sourceEntityId_ = 0;
-
         dieType_ = 0;
 
         entityId_ = 0;
-
-        lifeState_ = 0;
 
         moveReliableSeq_ = 0;
 
@@ -660,6 +668,8 @@ public final class LifeStateChangeNotifyOuterClass {
       public emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify buildPartial() {
         emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify result = new emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify(this);
         int from_bitField0_ = bitField0_;
+        result.lifeState_ = lifeState_;
+        result.sourceEntityId_ = sourceEntityId_;
         result.attackTag_ = attackTag_;
         if (serverBuffListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -670,10 +680,8 @@ public final class LifeStateChangeNotifyOuterClass {
         } else {
           result.serverBuffList_ = serverBuffListBuilder_.build();
         }
-        result.sourceEntityId_ = sourceEntityId_;
         result.dieType_ = dieType_;
         result.entityId_ = entityId_;
-        result.lifeState_ = lifeState_;
         result.moveReliableSeq_ = moveReliableSeq_;
         onBuilt();
         return result;
@@ -723,6 +731,12 @@ public final class LifeStateChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify other) {
         if (other == emu.grasscutter.net.proto.LifeStateChangeNotifyOuterClass.LifeStateChangeNotify.getDefaultInstance()) return this;
+        if (other.getLifeState() != 0) {
+          setLifeState(other.getLifeState());
+        }
+        if (other.getSourceEntityId() != 0) {
+          setSourceEntityId(other.getSourceEntityId());
+        }
         if (!other.getAttackTag().isEmpty()) {
           attackTag_ = other.attackTag_;
           onChanged();
@@ -753,17 +767,11 @@ public final class LifeStateChangeNotifyOuterClass {
             }
           }
         }
-        if (other.getSourceEntityId() != 0) {
-          setSourceEntityId(other.getSourceEntityId());
-        }
         if (other.dieType_ != 0) {
           setDieTypeValue(other.getDieTypeValue());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
-        }
-        if (other.getLifeState() != 0) {
-          setLifeState(other.getLifeState());
         }
         if (other.getMoveReliableSeq() != 0) {
           setMoveReliableSeq(other.getMoveReliableSeq());
@@ -798,9 +806,71 @@ public final class LifeStateChangeNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int lifeState_ ;
+      /**
+       * <code>uint32 life_state = 2;</code>
+       * @return The lifeState.
+       */
+      @java.lang.Override
+      public int getLifeState() {
+        return lifeState_;
+      }
+      /**
+       * <code>uint32 life_state = 2;</code>
+       * @param value The lifeState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLifeState(int value) {
+        
+        lifeState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 life_state = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLifeState() {
+        
+        lifeState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int sourceEntityId_ ;
+      /**
+       * <code>uint32 source_entity_id = 4;</code>
+       * @return The sourceEntityId.
+       */
+      @java.lang.Override
+      public int getSourceEntityId() {
+        return sourceEntityId_;
+      }
+      /**
+       * <code>uint32 source_entity_id = 4;</code>
+       * @param value The sourceEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSourceEntityId(int value) {
+        
+        sourceEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 source_entity_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSourceEntityId() {
+        
+        sourceEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object attackTag_ = "";
       /**
-       * <code>string attack_tag = 12;</code>
+       * <code>string attack_tag = 6;</code>
        * @return The attackTag.
        */
       public java.lang.String getAttackTag() {
@@ -816,7 +886,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string attack_tag = 12;</code>
+       * <code>string attack_tag = 6;</code>
        * @return The bytes for attackTag.
        */
       public com.google.protobuf.ByteString
@@ -833,7 +903,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>string attack_tag = 12;</code>
+       * <code>string attack_tag = 6;</code>
        * @param value The attackTag to set.
        * @return This builder for chaining.
        */
@@ -848,7 +918,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string attack_tag = 12;</code>
+       * <code>string attack_tag = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearAttackTag() {
@@ -858,7 +928,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string attack_tag = 12;</code>
+       * <code>string attack_tag = 6;</code>
        * @param value The bytes for attackTag to set.
        * @return This builder for chaining.
        */
@@ -887,7 +957,7 @@ public final class LifeStateChangeNotifyOuterClass {
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> serverBuffListBuilder_;
 
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
         if (serverBuffListBuilder_ == null) {
@@ -897,7 +967,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public int getServerBuffListCount() {
         if (serverBuffListBuilder_ == null) {
@@ -907,7 +977,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -917,7 +987,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -934,7 +1004,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder setServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -948,7 +1018,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder addServerBuffList(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
         if (serverBuffListBuilder_ == null) {
@@ -964,7 +1034,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
@@ -981,7 +1051,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder addServerBuffList(
           emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -995,7 +1065,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder addServerBuffList(
           int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
@@ -1009,7 +1079,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder addAllServerBuffList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> values) {
@@ -1024,7 +1094,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder clearServerBuffList() {
         if (serverBuffListBuilder_ == null) {
@@ -1037,7 +1107,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public Builder removeServerBuffList(int index) {
         if (serverBuffListBuilder_ == null) {
@@ -1050,14 +1120,14 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder getServerBuffListBuilder(
           int index) {
         return getServerBuffListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
           int index) {
@@ -1067,7 +1137,7 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
            getServerBuffListOrBuilderList() {
@@ -1078,14 +1148,14 @@ public final class LifeStateChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder() {
         return getServerBuffListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder(
           int index) {
@@ -1093,7 +1163,7 @@ public final class LifeStateChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
       }
       /**
-       * <code>repeated .ServerBuff server_buff_list = 13;</code>
+       * <code>repeated .ServerBuff server_buff_list = 7;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder> 
            getServerBuffListBuilderList() {
@@ -1114,47 +1184,16 @@ public final class LifeStateChangeNotifyOuterClass {
         return serverBuffListBuilder_;
       }
 
-      private int sourceEntityId_ ;
-      /**
-       * <code>uint32 source_entity_id = 9;</code>
-       * @return The sourceEntityId.
-       */
-      @java.lang.Override
-      public int getSourceEntityId() {
-        return sourceEntityId_;
-      }
-      /**
-       * <code>uint32 source_entity_id = 9;</code>
-       * @param value The sourceEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSourceEntityId(int value) {
-        
-        sourceEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 source_entity_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSourceEntityId() {
-        
-        sourceEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int dieType_ = 0;
       /**
-       * <code>.PlayerDieType die_type = 8;</code>
+       * <code>.PlayerDieType die_type = 11;</code>
        * @return The enum numeric value on the wire for dieType.
        */
       @java.lang.Override public int getDieTypeValue() {
         return dieType_;
       }
       /**
-       * <code>.PlayerDieType die_type = 8;</code>
+       * <code>.PlayerDieType die_type = 11;</code>
        * @param value The enum numeric value on the wire for dieType to set.
        * @return This builder for chaining.
        */
@@ -1165,7 +1204,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 8;</code>
+       * <code>.PlayerDieType die_type = 11;</code>
        * @return The dieType.
        */
       @java.lang.Override
@@ -1175,7 +1214,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.PlayerDieTypeOuterClass.PlayerDieType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PlayerDieType die_type = 8;</code>
+       * <code>.PlayerDieType die_type = 11;</code>
        * @param value The dieType to set.
        * @return This builder for chaining.
        */
@@ -1189,7 +1228,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.PlayerDieType die_type = 8;</code>
+       * <code>.PlayerDieType die_type = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearDieType() {
@@ -1201,7 +1240,7 @@ public final class LifeStateChangeNotifyOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -1209,7 +1248,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -1220,7 +1259,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 7;</code>
+       * <code>uint32 entity_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -1230,40 +1269,9 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
 
-      private int lifeState_ ;
-      /**
-       * <code>uint32 life_state = 3;</code>
-       * @return The lifeState.
-       */
-      @java.lang.Override
-      public int getLifeState() {
-        return lifeState_;
-      }
-      /**
-       * <code>uint32 life_state = 3;</code>
-       * @param value The lifeState to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLifeState(int value) {
-        
-        lifeState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 life_state = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLifeState() {
-        
-        lifeState_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int moveReliableSeq_ ;
       /**
-       * <code>uint32 move_reliable_seq = 1;</code>
+       * <code>uint32 move_reliable_seq = 15;</code>
        * @return The moveReliableSeq.
        */
       @java.lang.Override
@@ -1271,7 +1279,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return moveReliableSeq_;
       }
       /**
-       * <code>uint32 move_reliable_seq = 1;</code>
+       * <code>uint32 move_reliable_seq = 15;</code>
        * @param value The moveReliableSeq to set.
        * @return This builder for chaining.
        */
@@ -1282,7 +1290,7 @@ public final class LifeStateChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 move_reliable_seq = 1;</code>
+       * <code>uint32 move_reliable_seq = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMoveReliableSeq() {
@@ -1360,11 +1368,11 @@ public final class LifeStateChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033LifeStateChangeNotify.proto\032\020ServerBuf" +
       "f.proto\032\023PlayerDieType.proto\"\320\001\n\025LifeSta" +
-      "teChangeNotify\022\022\n\nattack_tag\030\014 \001(\t\022%\n\020se" +
-      "rver_buff_list\030\r \003(\0132\013.ServerBuff\022\030\n\020sou" +
-      "rce_entity_id\030\t \001(\r\022 \n\010die_type\030\010 \001(\0162\016." +
-      "PlayerDieType\022\021\n\tentity_id\030\007 \001(\r\022\022\n\nlife" +
-      "_state\030\003 \001(\r\022\031\n\021move_reliable_seq\030\001 \001(\rB" +
+      "teChangeNotify\022\022\n\nlife_state\030\002 \001(\r\022\030\n\020so" +
+      "urce_entity_id\030\004 \001(\r\022\022\n\nattack_tag\030\006 \001(\t" +
+      "\022%\n\020server_buff_list\030\007 \003(\0132\013.ServerBuff\022" +
+      " \n\010die_type\030\013 \001(\0162\016.PlayerDieType\022\021\n\tent" +
+      "ity_id\030\016 \001(\r\022\031\n\021move_reliable_seq\030\017 \001(\rB" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1378,7 +1386,7 @@ public final class LifeStateChangeNotifyOuterClass {
     internal_static_LifeStateChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_LifeStateChangeNotify_descriptor,
-        new java.lang.String[] { "AttackTag", "ServerBuffList", "SourceEntityId", "DieType", "EntityId", "LifeState", "MoveReliableSeq", });
+        new java.lang.String[] { "LifeState", "SourceEntityId", "AttackTag", "ServerBuffList", "DieType", "EntityId", "MoveReliableSeq", });
     emu.grasscutter.net.proto.ServerBuffOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlayerDieTypeOuterClass.getDescriptor();
   }

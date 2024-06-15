@@ -13,16 +13,23 @@ public class PacketOpcodesUtils {
                     PacketOpcodes.PingReq,
                     PacketOpcodes.PingRsp,
                     PacketOpcodes.WorldPlayerRTTNotify,
-                    PacketOpcodes.UnionCmdNotify
-//                    PacketOpcodes.QueryPathReq,
-//                    PacketOpcodes.QueryPathRsp,
+                    PacketOpcodes.UnionCmdNotify,
+                    PacketOpcodes.SceneTimeNotify,
+                    PacketOpcodes.QueryPathReq,
+                    PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
-//                    PacketOpcodes.PlayerTimeNotify,
-//                    PacketOpcodes.AbilityInvocationsNotify,
+                    PacketOpcodes.PlayerTimeNotify,
+                    PacketOpcodes.PlayerPropNotify,
+
+                    PacketOpcodes.AbilityInvocationsNotify,
+                    PacketOpcodes.CombatInvocationsNotify,
 //                    PacketOpcodes.PlayerGameTimeNotify,
-//                    PacketOpcodes.AvatarPropNotify,
-//                    PacketOpcodes.AvatarSatiationDataNotify
+                    PacketOpcodes.AvatarPropNotify,
+                    PacketOpcodes.AvatarSatiationDataNotify,
+                    PacketOpcodes.UNKNOWN1,
+                    PacketOpcodes.UNKNOWN2,
+                    PacketOpcodes.UNKNOWN3
             );
     private static final Int2ObjectMap<String> opcodeMap;
 

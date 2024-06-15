@@ -37,6 +37,10 @@ public final class ChangeGameTimeRspOuterClass {
     int getExtraDays();
   }
   /**
+   * <pre>
+   * CmdId: 274
+   * </pre>
+   *
    * Protobuf type {@code ChangeGameTimeRsp}
    */
   public static final class ChangeGameTimeRsp extends
@@ -339,6 +343,10 @@ public final class ChangeGameTimeRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 274
+     * </pre>
+     *
      * Protobuf type {@code ChangeGameTimeRsp}
      */
     public static final class Builder extends
