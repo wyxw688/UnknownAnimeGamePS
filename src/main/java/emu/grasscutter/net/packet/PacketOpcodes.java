@@ -191,6 +191,9 @@ public final class PacketOpcodes {
     public static final int PersonalSceneJumpReq = 21464;
     public static final int DestroyMaterialReq = 29395;
     public static final int DestroyMaterialRsp = 24989;
+    public static final int McoinExchangeHcoinReq = 26763;
+    public static final int McoinExchangeHcoinRsp = 9399;
+    public static final int CardProductRewardNotify = 27902;
 
     // 4.7.0 Obfuscated
 
@@ -216,7 +219,6 @@ public final class PacketOpcodes {
     public static final int WeaponAwakenReq = 1;
     public static final int WeaponAwakenRsp = 1;
     public static final int GetWidgetQuickSlotListReq = 1;
-    public static final int CardProductRewardNotify = 1;
     public static final int TakePlayerLevelRewardReq = 1;
     public static final int TakePlayerLevelRewardRsp = 1;
     public static final int AvatarGainCostumeNotify = 1;
@@ -1403,8 +1405,6 @@ public final class PacketOpcodes {
     public static final int MassiveEntityStateChangedNotify = 1;
     public static final int MaterialDeleteReturnNotify = 1;
     public static final int MaterialDeleteUpdateNotify = 1;
-    public static final int McoinExchangeHcoinReq = 1;
-    public static final int McoinExchangeHcoinRsp = 1;
     public static final int MechanicusCandidateTeamCreateReq = 1;
     public static final int MechanicusCandidateTeamCreateRsp = 1;
     public static final int MechanicusCloseNotify = 1;

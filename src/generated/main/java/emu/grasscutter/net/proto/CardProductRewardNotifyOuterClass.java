@@ -31,18 +31,22 @@ public final class CardProductRewardNotifyOuterClass {
         getProductIdBytes();
 
     /**
-     * <code>uint32 remain_days = 14;</code>
+     * <code>uint32 remain_days = 10;</code>
      * @return The remainDays.
      */
     int getRemainDays();
 
     /**
-     * <code>uint32 hcoin = 10;</code>
+     * <code>uint32 hcoin = 13;</code>
      * @return The hcoin.
      */
     int getHcoin();
   }
   /**
+   * <pre>
+   * CmdId: 27902
+   * </pre>
+   *
    * Protobuf type {@code CardProductRewardNotify}
    */
   public static final class CardProductRewardNotify extends
@@ -96,12 +100,12 @@ public final class CardProductRewardNotifyOuterClass {
             }
             case 80: {
 
-              hcoin_ = input.readUInt32();
+              remainDays_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 104: {
 
-              remainDays_ = input.readUInt32();
+              hcoin_ = input.readUInt32();
               break;
             }
             default: {
@@ -174,10 +178,10 @@ public final class CardProductRewardNotifyOuterClass {
       }
     }
 
-    public static final int REMAIN_DAYS_FIELD_NUMBER = 14;
+    public static final int REMAIN_DAYS_FIELD_NUMBER = 10;
     private int remainDays_;
     /**
-     * <code>uint32 remain_days = 14;</code>
+     * <code>uint32 remain_days = 10;</code>
      * @return The remainDays.
      */
     @java.lang.Override
@@ -185,10 +189,10 @@ public final class CardProductRewardNotifyOuterClass {
       return remainDays_;
     }
 
-    public static final int HCOIN_FIELD_NUMBER = 10;
+    public static final int HCOIN_FIELD_NUMBER = 13;
     private int hcoin_;
     /**
-     * <code>uint32 hcoin = 10;</code>
+     * <code>uint32 hcoin = 13;</code>
      * @return The hcoin.
      */
     @java.lang.Override
@@ -213,11 +217,11 @@ public final class CardProductRewardNotifyOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, productId_);
       }
-      if (hcoin_ != 0) {
-        output.writeUInt32(10, hcoin_);
-      }
       if (remainDays_ != 0) {
-        output.writeUInt32(14, remainDays_);
+        output.writeUInt32(10, remainDays_);
+      }
+      if (hcoin_ != 0) {
+        output.writeUInt32(13, hcoin_);
       }
       unknownFields.writeTo(output);
     }
@@ -231,13 +235,13 @@ public final class CardProductRewardNotifyOuterClass {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, productId_);
       }
-      if (hcoin_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, hcoin_);
-      }
       if (remainDays_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, remainDays_);
+          .computeUInt32Size(10, remainDays_);
+      }
+      if (hcoin_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, hcoin_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -373,6 +377,10 @@ public final class CardProductRewardNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27902
+     * </pre>
+     *
      * Protobuf type {@code CardProductRewardNotify}
      */
     public static final class Builder extends
@@ -610,7 +618,7 @@ public final class CardProductRewardNotifyOuterClass {
 
       private int remainDays_ ;
       /**
-       * <code>uint32 remain_days = 14;</code>
+       * <code>uint32 remain_days = 10;</code>
        * @return The remainDays.
        */
       @java.lang.Override
@@ -618,7 +626,7 @@ public final class CardProductRewardNotifyOuterClass {
         return remainDays_;
       }
       /**
-       * <code>uint32 remain_days = 14;</code>
+       * <code>uint32 remain_days = 10;</code>
        * @param value The remainDays to set.
        * @return This builder for chaining.
        */
@@ -629,7 +637,7 @@ public final class CardProductRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 remain_days = 14;</code>
+       * <code>uint32 remain_days = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRemainDays() {
@@ -641,7 +649,7 @@ public final class CardProductRewardNotifyOuterClass {
 
       private int hcoin_ ;
       /**
-       * <code>uint32 hcoin = 10;</code>
+       * <code>uint32 hcoin = 13;</code>
        * @return The hcoin.
        */
       @java.lang.Override
@@ -649,7 +657,7 @@ public final class CardProductRewardNotifyOuterClass {
         return hcoin_;
       }
       /**
-       * <code>uint32 hcoin = 10;</code>
+       * <code>uint32 hcoin = 13;</code>
        * @param value The hcoin to set.
        * @return This builder for chaining.
        */
@@ -660,7 +668,7 @@ public final class CardProductRewardNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 hcoin = 10;</code>
+       * <code>uint32 hcoin = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearHcoin() {
@@ -738,7 +746,7 @@ public final class CardProductRewardNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035CardProductRewardNotify.proto\"Q\n\027CardP" +
       "roductRewardNotify\022\022\n\nproduct_id\030\004 \001(\t\022\023" +
-      "\n\013remain_days\030\016 \001(\r\022\r\n\005hcoin\030\n \001(\rB\033\n\031em" +
+      "\n\013remain_days\030\n \001(\r\022\r\n\005hcoin\030\r \001(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

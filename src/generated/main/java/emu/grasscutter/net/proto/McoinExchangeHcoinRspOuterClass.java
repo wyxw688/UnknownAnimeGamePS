@@ -25,21 +25,20 @@ public final class McoinExchangeHcoinRspOuterClass {
     int getHcoin();
 
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 mcoin_cost = 1;</code>
+     * <code>uint32 mcoin_cost = 15;</code>
      * @return The mcoinCost.
      */
     int getMcoinCost();
   }
   /**
    * <pre>
-   * CmdId: 21323
-   * Obf: OEBFOFIJHGC
+   * CmdId: 9399
    * </pre>
    *
    * Protobuf type {@code McoinExchangeHcoinRsp}
@@ -86,19 +85,19 @@ public final class McoinExchangeHcoinRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 88: {
 
-              mcoinCost_ = input.readUInt32();
+              hcoin_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 88: {
+            case 120: {
 
-              hcoin_ = input.readUInt32();
+              mcoinCost_ = input.readUInt32();
               break;
             }
             default: {
@@ -144,10 +143,10 @@ public final class McoinExchangeHcoinRspOuterClass {
       return hcoin_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 5;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -155,10 +154,10 @@ public final class McoinExchangeHcoinRspOuterClass {
       return retcode_;
     }
 
-    public static final int MCOIN_COST_FIELD_NUMBER = 1;
+    public static final int MCOIN_COST_FIELD_NUMBER = 15;
     private int mcoinCost_;
     /**
-     * <code>uint32 mcoin_cost = 1;</code>
+     * <code>uint32 mcoin_cost = 15;</code>
      * @return The mcoinCost.
      */
     @java.lang.Override
@@ -180,14 +179,14 @@ public final class McoinExchangeHcoinRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mcoinCost_ != 0) {
-        output.writeUInt32(1, mcoinCost_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
       if (hcoin_ != 0) {
         output.writeUInt32(11, hcoin_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
+      }
+      if (mcoinCost_ != 0) {
+        output.writeUInt32(15, mcoinCost_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +197,17 @@ public final class McoinExchangeHcoinRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mcoinCost_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, mcoinCost_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
       if (hcoin_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, hcoin_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(12, retcode_);
+      }
+      if (mcoinCost_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, mcoinCost_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +344,7 @@ public final class McoinExchangeHcoinRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21323
-     * Obf: OEBFOFIJHGC
+     * CmdId: 9399
      * </pre>
      *
      * Protobuf type {@code McoinExchangeHcoinRsp}
@@ -540,7 +538,7 @@ public final class McoinExchangeHcoinRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -548,7 +546,7 @@ public final class McoinExchangeHcoinRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -559,7 +557,7 @@ public final class McoinExchangeHcoinRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 5;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -571,7 +569,7 @@ public final class McoinExchangeHcoinRspOuterClass {
 
       private int mcoinCost_ ;
       /**
-       * <code>uint32 mcoin_cost = 1;</code>
+       * <code>uint32 mcoin_cost = 15;</code>
        * @return The mcoinCost.
        */
       @java.lang.Override
@@ -579,7 +577,7 @@ public final class McoinExchangeHcoinRspOuterClass {
         return mcoinCost_;
       }
       /**
-       * <code>uint32 mcoin_cost = 1;</code>
+       * <code>uint32 mcoin_cost = 15;</code>
        * @param value The mcoinCost to set.
        * @return This builder for chaining.
        */
@@ -590,7 +588,7 @@ public final class McoinExchangeHcoinRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 mcoin_cost = 1;</code>
+       * <code>uint32 mcoin_cost = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearMcoinCost() {
@@ -668,7 +666,7 @@ public final class McoinExchangeHcoinRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033McoinExchangeHcoinRsp.proto\"K\n\025McoinEx" +
       "changeHcoinRsp\022\r\n\005hcoin\030\013 \001(\r\022\017\n\007retcode" +
-      "\030\005 \001(\005\022\022\n\nmcoin_cost\030\001 \001(\rB\033\n\031emu.grassc" +
+      "\030\014 \001(\005\022\022\n\nmcoin_cost\030\017 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
