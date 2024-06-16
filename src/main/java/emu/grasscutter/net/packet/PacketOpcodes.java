@@ -185,6 +185,8 @@ public final class PacketOpcodes {
     public static final int DoGachaRsp = 27578;
     public static final int GachaWishReq = 5636;
     public static final int GachaWishRsp = 26208;
+    public static final int DungeonEntryInfoReq = 730;
+    public static final int DungeonEntryInfoRsp = 27078;
 
     // 4.7.0 Obfuscated
 
@@ -202,8 +204,6 @@ public final class PacketOpcodes {
     public static final int EvtDestroyGadgetNotify = 1;
     public static final int EvtEntityRenderersChangedNotify = 1;
     public static final int AbilityChangeNotify = 1;
-    public static final int DungeonEntryInfoReq = 1;
-    public static final int DungeonEntryInfoRsp = 1;
     public static final int HitTreeNotify = 1;
     public static final int SetEntityClientDataNotify = 1;
     public static final int WorldPlayerLocationNotify = 1;
