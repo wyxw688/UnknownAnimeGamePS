@@ -187,6 +187,10 @@ public final class PacketOpcodes {
     public static final int GachaWishRsp = 26208;
     public static final int DungeonEntryInfoReq = 730;
     public static final int DungeonEntryInfoRsp = 27078;
+    public static final int GetActivityInfoRsp = 27972;
+    public static final int PersonalSceneJumpReq = 21464;
+    public static final int DestroyMaterialReq = 29395;
+    public static final int DestroyMaterialRsp = 24989;
 
     // 4.7.0 Obfuscated
 
@@ -195,10 +199,7 @@ public final class PacketOpcodes {
     public static final int SceneTransToPointRsp = 1;
     public static final int WindSeedClientNotify = 1;
     public static final int SceneEntityUpdateNotify = 1;
-    public static final int DestroyMaterialReq = 1;
-    public static final int DestroyMaterialRsp = 1;
     public static final int EvtCreateGadgetNotify = 1;
-    public static final int GetActivityInfoRsp = 1;
     public static final int GetFriendShowNameCardInfoRsp = 1;
     public static final int EvtAiSyncSkillCdNotify = 1;
     public static final int EvtDestroyGadgetNotify = 1;
@@ -214,7 +215,6 @@ public final class PacketOpcodes {
     public static final int WeaponPromoteRsp = 1;
     public static final int WeaponAwakenReq = 1;
     public static final int WeaponAwakenRsp = 1;
-    public static final int PersonalSceneJumpReq = 1;
     public static final int GetWidgetQuickSlotListReq = 1;
     public static final int CardProductRewardNotify = 1;
     public static final int TakePlayerLevelRewardReq = 1;
