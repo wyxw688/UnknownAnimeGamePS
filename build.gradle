@@ -158,7 +158,7 @@ jar {
         attributes 'Main-Class': 'emu.grasscutter.Grasscutter'
     }
 
-    archiveBaseName = 'grasscutter'
+    archiveBaseName = 'UnknownAnimeGamePS'
     if (project.hasProperty('jarFilename')) {
         archiveFileName = "${jarFilename}.${archiveExtension}"
     }
