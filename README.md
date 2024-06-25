@@ -32,7 +32,7 @@
 | [GenshinImpact_4.7.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240524181522_P7n5afVhY8WeoVZb/GenshinImpact_4.7.0.zip.006) | 7.15 GB | 84135fa7008156965514a6ec99c55c66 |
 
 
-- Download the patch from [here](https://watchandy.me/version.dll).
+- Download the patch from here. [OSREL (Oversea Ver.)](https://watchandy.me/version.dll) [CNREL (China Ver.)](https://watchandy.me/cn/version.dll)
 - Put the `version.dll` in to the folder of your game client.
 - Download the old version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0).
 - Put the old version of `mihoyonet.dll` in `GenshinImpact_Data/Plugins` folder.
