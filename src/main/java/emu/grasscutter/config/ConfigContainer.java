@@ -140,7 +140,7 @@ public class ConfigContainer {
         public boolean autoCreate = false;
         public boolean EXPERIMENTAL_RealPassword = false;
         public String[] defaultPermissions = {};
-        public String playerEmail = "grasscutter.io";
+        public String playerEmail = "GuraGC.io";
         public int maxPlayer = -1;
     }
 
@@ -363,17 +363,17 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a Grasscutter server.";
+        public String welcomeMessage = "Welcome to a GuraGC 4.7.0!";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to Grasscutter!";
+            public String title = "Welcome to GuraGC!";
             public String content = """
                     Hi there!\r
-                    First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
+                    First of all, welcome to GuraGC. If you have any issues, please let us know so that Lawnmower can help you! \r
                     \r
                     Check out our:\r
-                    <type="browser" text="Discord" href="https://discord.gg/T5vZU6UyeG"/>
+                    <type="browser" text="Discord" href="https://discord.gg/miHoYo"/>
                     """;
             public String sender = "Lawnmower";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
@@ -384,13 +384,13 @@ public class ConfigContainer {
     }
 
     public static class ConsoleAccount {
-        public int avatarId = 10000007;
-        public int nameCardId = 210001;
+        public int avatarId = 10000095;
+        public int nameCardId = 210180;
         public int adventureRank = 1;
         public int worldLevel = 0;
 
-        public String nickName = "Server";
-        public String signature = "Welcome to Grasscutter!";
+        public String nickName = "GuraGC";
+        public String signature = "Welcome to GuraGC!";
     }
 
     public static class Files {
@@ -403,7 +403,7 @@ public class ConfigContainer {
     @NoArgsConstructor
     public static class Region {
         public String Name = "os_usa";
-        public String Title = "Grasscutter";
+        public String Title = "GuraGC";
         public String Ip = "127.0.0.1";
         public int Port = 22102;
 
