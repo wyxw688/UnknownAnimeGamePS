@@ -13,6 +13,9 @@
 * Spawning monsters via console
 * Inventory features (receiving items/characters, upgrading items/characters, etc) (-)
 
+* 
+[![Star History Chart](https://api.star-history.com/svg?repos=XeonSucksLAB/UnknownAnimeGamePS&type=Date)](https://star-history.com/#XeonSucksLAB/UnknownAnimeGamePS&Date)
+
 # Setup Guide
 
 ## Main Requirements
@@ -95,3 +98,4 @@ chmod +x gradlew
 
 ### Troubleshooting
 - Fiddler or any proxy is required.
+
