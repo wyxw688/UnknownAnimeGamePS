@@ -56,14 +56,8 @@ English | [简体中文](README_zh-CN.md)
 | [audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip) | 0.74 GB | 1.58 GB | b5cb77749a0e2fc0e85b6b1ee319a7e9 |
 
 
-- Download the patch from here. [OSREL (Oversea Ver.)](https://watchandy.me/version.dll) [CNREL (China Ver.)](https://watchandy.me/cn/version.dll)
+- Download the patch from [here](https://watchandy.me/5.0.0/version.dll).
 - Put the `version.dll` in to the folder of your game client.
-- Download the old version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0).
-- Put the old version of `mihoyonet.dll` in `GenshinImpact_Data/Plugins` folder.
-
-### Notice
-
-In the 5.0 version of UnknownAnimeGamePS Grasscutter fork, I've added an option called "useXorEncryption" in config.json, which is disabled by default. If the option is enabled, you won't be able to enter the game using the patch provided above, you will have to use a patch which patches the client's RSA key. Due to my skill issue, I am not able to provide a better patch for PC environment. If you have a better patch, please in contact with me on Discord (@watchandytw), thanks.
 
 ## Let's build the server
 

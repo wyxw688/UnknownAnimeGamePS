@@ -56,14 +56,9 @@
 | [audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip) | 0.62 GB | 1.35 GB | c1073373d6c7b3680217335dc346de50 |
 | [audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip) | 0.74 GB | 1.58 GB | b5cb77749a0e2fc0e85b6b1ee319a7e9 |
 
-- 从这里下载补丁。[OSREL (国际服)](https://watchandy.me/version.dll) [CNREL (国服)](https://watchandy.me/cn/version.dll)
+
+- 从[这里](https://watchandy.me/5.0.0/version.dll)下载补丁。
 - 将 `version.dll` 放入游戏客户端的文件夹中。
-- 下载旧版本的 [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll)（4.2.0版）。
-- 将旧版本的 `mihoyonet.dll` 放入 `GenshinImpact_Data/Plugins` 文件夹中。
-
-### 注意
-
-在UnknownAnimeGamePS Grasscutter fork的5.0版本中，我添加了一个名为 "useXorEncryption" 的选项，默认情况下是禁用的。如果启用此选项，你将无法使用上面提供的补丁进入游戏，你必须使用一个补丁来修补客户端的RSA密钥。由于我技术有限，我无法提供适用于PC环境的更好补丁。如果你有更好的补丁，请通过Discord（@watchandytw）与我联系，谢谢。
 
 ## 搭建服务器
 
