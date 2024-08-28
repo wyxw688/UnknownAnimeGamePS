@@ -321,14 +321,14 @@ public class PacketOpcodes {
     public static final int AvatarWearFlycloakRsp = 27660;
     public static final int AvatarGainFlycloakNotify = 6824;
     public static final int AvatarChangeTraceEffectReq = 28932;
-    public static final int PlayerApplyEnterMpResultNotify = 8810; // proto
-    public static final int GetOnlinePlayerInfoRsp = 25443; // proto
-    public static final int PlayerApplyEnterMpNotify = 5245; // proto
-    public static final int PlayerApplyEnterMpReq = 4701; // proto
-    public static final int PlayerApplyEnterMpRsp = 24897; // proto
-    public static final int PlayerApplyEnterMpResultReq = 23674; // proto
-    public static final int PlayerApplyEnterMpAfterMatchAgreedNotify = 21662; // proto
-    public static final int DeathZoneInfoNotify = 24379; // proto
+    public static final int PlayerApplyEnterMpResultNotify = 8810;
+    public static final int GetOnlinePlayerInfoRsp = 25443;
+    public static final int PlayerApplyEnterMpNotify = 5245;
+    public static final int PlayerApplyEnterMpReq = 4701;
+    public static final int PlayerApplyEnterMpRsp = 24897;
+    public static final int PlayerApplyEnterMpResultReq = 23674;
+    public static final int PlayerApplyEnterMpAfterMatchAgreedNotify = 21662;
+    public static final int DeathZoneInfoNotify = 24379;
     public static final int AddFriendNotify = 23316;
     public static final int AskAddFriendNotify = 5432;
     public static final int AskAddFriendReq = 23646;
@@ -354,8 +354,8 @@ public class PacketOpcodes {
     public static final int HomeGetBlueprintSlotInfoReq = 9031; // proto
     public static final int HomeGetBlueprintSlotInfoRsp = 23776; // proto
     public static final int HomeCreateBlueprintRsp = 25729; // proto
-    public static final int WorldPlayerLocationNotify = 22207; // proto
-    public static final int ResinChangeNotify = 4336; // proto
+    public static final int WorldPlayerLocationNotify = 22207;
+    public static final int ResinChangeNotify = 4336;
     public static final int GetAllMailReq = 7646;
     public static final int GetAllMailRsp = 22156;
     public static final int GetMailItemReq = 8354;
@@ -415,6 +415,12 @@ public class PacketOpcodes {
     public static final int DungeonDieOptionRsp = 28706;
     public static final int ChangeTeamNameReq = 29880;
     public static final int ChangeTeamNameRsp = 7491;
+    public static final int AbilityInvocationsNotify = 4844;
+    public static final int WorldPlayerRTTNotify = 22234;
+    public static final int PlayerApplyEnterMpResultRsp = 27380;
+    public static final int PlayerGetForceQuitBanInfoRsp = 29159;
+    public static final int PlayerPreEnterMpNotify = 23352;
+    public static final int WorldPlayerInfoNotify = 23024;
 
     // Obfuscated
     public static final int Unk5000_GAHMPOELOAL = 24500;
@@ -1150,7 +1156,6 @@ public class PacketOpcodes {
     public static final int Unk5000_NEDJHNGNEKC = 6284;
     public static final int Unk5000_DNFCGDLPODD = 24899;
     public static final int Unk5000_NFIKAKPLDBL = 4080;
-    public static final int Unk5000_IOPBODOJOLA = 23024;
     public static final int Unk5000_JGLFJJOHDIB = 8292;
     public static final int Unk5000_DPGBOICLANK = 20239;
     public static final int Unk5000_IPCBPOAPOKF = 25786;
@@ -1428,7 +1433,6 @@ public class PacketOpcodes {
     public static final int Unk5000_EFLLKAMDBED = 1936;
     public static final int Unk5000_KBHKABMFHIA = 6217;
     public static final int Unk5000_LKKMKBCMGBC = 23068;
-    public static final int Unk5000_PEGDMPLDBGH = 23352;
     public static final int Unk5000_PINEMFJJJNH = 23625;
     public static final int Unk5000_JOEJHMANJOH = 22039;
     public static final int Unk5000_KAILGDDAEOD = 21461;
@@ -1958,7 +1962,6 @@ public class PacketOpcodes {
     public static final int Unk5000_FDGOJDCLDAH = 26447;
     public static final int Unk5000_IOCGPKAHPPD = 23591;
     public static final int Unk5000_OIMBEJHELGD = 20296;
-    public static final int Unk5000_OJGOCMBGPCP = 22234;
     public static final int Unk5000_JKOFFPMNPOD = 808;
     public static final int Unk5000_JFBFGACBOEM = 20463;
     public static final int Unk5000_OIHPLAEKINM = 3917;
@@ -2006,7 +2009,6 @@ public class PacketOpcodes {
     public static final int Unk5000_KOLJGBKCDFE = 5992;
     public static final int Unk5000_CKNFOGKBEMO = 28469;
     public static final int Unk5000_ACDIDGPAHIH = 952;
-    public static final int Unk5000_LCEDHAFADGN = 29159;
     public static final int Unk5000_CCPJFPKCIHI = 23690;
     public static final int Unk5000_PNBMLJPIPGP = 8695;
     public static final int Unk5000_KHJKCJDEAHO = 29677;
@@ -2297,7 +2299,6 @@ public class PacketOpcodes {
     public static final int Unk5000_NKGJPLKLBBI = 26733;
     public static final int Unk5000_KKNPOIEDGDI = 24228;
     public static final int Unk5000_KOGEJBNKKPD = 348;
-    public static final int Unk5000_GGFHOECCEJD = 4844;
     public static final int Unk5000_JAIGABGGKCC = 4138;
     public static final int Unk5000_HKHAEJHJHCE = 23619;
     public static final int Unk5000_INEKFALKDAL = 4455;
@@ -2335,7 +2336,6 @@ public class PacketOpcodes {
     public static final int Unk5000_ECIJEDPGKFF = 21275;
     public static final int Unk5000_JMKIDMACAIN = 23004;
     public static final int Unk5000_PBCBMMOHLOF = 25942;
-    public static final int Unk5000_OAPOFLJEPPA = 27380;
     public static final int Unk5000_EBKEAJCJKJN = 6259;
     public static final int Unk5000_PPCFAKHEBJF = 23720;
     public static final int Unk5000_BAHDFMCPJLG = 4649;
@@ -3129,7 +3129,6 @@ public class PacketOpcodes {
     public static final int PlayerEnterMapLayerNotify = 1;
     public static final int SkipPlayerGameTimeReq = 1;
     public static final int HomeAvatarTalkReq = 1;
-    public static final int PlayerApplyEnterMpResultRsp = 1;
     public static final int GetOnlinePlayerInfoReq = 1;
     public static final int GetShopmallDataRsp = 1;
     public static final int ServerAnnounceRevokeNotify = 1;
@@ -3144,7 +3143,6 @@ public class PacketOpcodes {
     public static final int FurnitureMakeRsp = 1;
     public static final int AbilityInvocationFailNotify = 1;
     public static final int AbilityInvocationFixedNotify = 1;
-    public static final int AbilityInvocationsNotify = 1;
     public static final int AcceptCityReputationRequestReq = 1;
     public static final int AcceptCityReputationRequestRsp = 1;
     public static final int AchievementUpdateNotify = 1;
@@ -4494,7 +4492,6 @@ public class PacketOpcodes {
     public static final int PlayerGeneralMatchConfirmNotify = 1;
     public static final int PlayerGeneralMatchDismissNotify = 1;
     public static final int PlayerGetForceQuitBanInfoReq = 1;
-    public static final int PlayerGetForceQuitBanInfoRsp = 1;
     public static final int PlayerInjectFixNotify = 1;
     public static final int PlayerIpRegionNotify = 1;
     public static final int PlayerLevelRewardUpdateNotify = 1;
@@ -4507,7 +4504,6 @@ public class PacketOpcodes {
     public static final int PlayerNicknameAuditDataNotify = 1;
     public static final int PlayerNicknameNotify = 1;
     public static final int PlayerNormalLuaShellNotify = 1;
-    public static final int PlayerPreEnterMpNotify = 1;
     public static final int PlayerQuitFromMpNotify = 1;
     public static final int PlayerRandomCookReq = 1;
     public static final int PlayerRandomCookRsp = 1;
@@ -5160,8 +5156,6 @@ public class PacketOpcodes {
     public static final int WorldOwnerBlossomBriefInfoNotify = 1;
     public static final int WorldOwnerBlossomScheduleInfoNotify = 1;
     public static final int WorldOwnerDailyTaskNotify = 1;
-    public static final int WorldPlayerInfoNotify = 1;
-    public static final int WorldPlayerRTTNotify = 1;
 
     // Unknown
     public static final HashSet<Integer> BANNED_PACKETS = new HashSet<>() {

@@ -19,7 +19,7 @@ public class HandlerSetPlayerPropReq extends PacketHandler {
             switch (prop) {
                 default -> player.setProperty(prop, (int) p.getVal(), true);
                 case PROP_IS_MP_MODE_AVAILABLE -> {
-                    if (!player.setProperty(prop, (int) p.getVal(), false)) {
+                    if (!player.setProperty(prop, (int) p.getIval(), false)) {
                         session.send(new PacketSetPlayerPropRsp(1));
                         return;
                     }
