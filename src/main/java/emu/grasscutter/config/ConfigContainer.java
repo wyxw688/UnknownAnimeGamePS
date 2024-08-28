@@ -363,7 +363,7 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a GuraGC 4.7.0!";
+        public String welcomeMessage = "Welcome to a GuraGC 5.0.0!";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
