@@ -26,7 +26,7 @@ public final class GetShopReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5877
+   * CmdId: 4619
    * </pre>
    *
    * Protobuf type {@code GetShopReq}
@@ -278,7 +278,7 @@ public final class GetShopReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5877
+     * CmdId: 4619
      * </pre>
      *
      * Protobuf type {@code GetShopReq}

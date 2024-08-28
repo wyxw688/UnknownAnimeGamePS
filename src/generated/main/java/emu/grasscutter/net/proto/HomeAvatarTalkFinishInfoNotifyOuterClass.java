@@ -44,8 +44,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 1817
-   * Obf: NBLCEJMJBPL
+   * CmdId: 20880
    * </pre>
    *
    * Protobuf type {@code HomeAvatarTalkFinishInfoNotify}
@@ -337,8 +336,7 @@ public final class HomeAvatarTalkFinishInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1817
-     * Obf: NBLCEJMJBPL
+     * CmdId: 20880
      * </pre>
      *
      * Protobuf type {@code HomeAvatarTalkFinishInfoNotify}

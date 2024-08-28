@@ -19,26 +19,26 @@ public final class QuestTransmitRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 2;</code>
+     * <code>uint32 quest_id = 12;</code>
      * @return The questId.
      */
     int getQuestId();
 
     /**
-     * <code>uint32 point_id = 8;</code>
+     * <code>uint32 point_id = 13;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 26298
+   * CmdId: 2300
    * </pre>
    *
    * Protobuf type {@code QuestTransmitRsp}
@@ -85,17 +85,17 @@ public final class QuestTransmitRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 96: {
 
               questId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 104: {
 
               pointId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -132,10 +132,10 @@ public final class QuestTransmitRspOuterClass {
               emu.grasscutter.net.proto.QuestTransmitRspOuterClass.QuestTransmitRsp.class, emu.grasscutter.net.proto.QuestTransmitRspOuterClass.QuestTransmitRsp.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 2;
+    public static final int QUEST_ID_FIELD_NUMBER = 12;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 2;</code>
+     * <code>uint32 quest_id = 12;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class QuestTransmitRspOuterClass {
       return questId_;
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 8;
+    public static final int POINT_ID_FIELD_NUMBER = 13;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 8;</code>
+     * <code>uint32 point_id = 13;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class QuestTransmitRspOuterClass {
       return pointId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -180,13 +180,13 @@ public final class QuestTransmitRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (questId_ != 0) {
-        output.writeUInt32(2, questId_);
+        output.writeUInt32(12, questId_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(8, pointId_);
+        output.writeUInt32(13, pointId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -199,15 +199,15 @@ public final class QuestTransmitRspOuterClass {
       size = 0;
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, questId_);
+          .computeUInt32Size(12, questId_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, pointId_);
+          .computeUInt32Size(13, pointId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -344,7 +344,7 @@ public final class QuestTransmitRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26298
+     * CmdId: 2300
      * </pre>
      *
      * Protobuf type {@code QuestTransmitRsp}
@@ -507,7 +507,7 @@ public final class QuestTransmitRspOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 2;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -515,7 +515,7 @@ public final class QuestTransmitRspOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 2;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -526,7 +526,7 @@ public final class QuestTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 2;</code>
+       * <code>uint32 quest_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -538,7 +538,7 @@ public final class QuestTransmitRspOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 8;</code>
+       * <code>uint32 point_id = 13;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -546,7 +546,7 @@ public final class QuestTransmitRspOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 8;</code>
+       * <code>uint32 point_id = 13;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -557,7 +557,7 @@ public final class QuestTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 8;</code>
+       * <code>uint32 point_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -569,7 +569,7 @@ public final class QuestTransmitRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -577,7 +577,7 @@ public final class QuestTransmitRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -588,7 +588,7 @@ public final class QuestTransmitRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -665,8 +665,8 @@ public final class QuestTransmitRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026QuestTransmitRsp.proto\"G\n\020QuestTransmi" +
-      "tRsp\022\020\n\010quest_id\030\002 \001(\r\022\020\n\010point_id\030\010 \001(\r" +
-      "\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net" +
+      "tRsp\022\020\n\010quest_id\030\014 \001(\r\022\020\n\010point_id\030\r \001(\r" +
+      "\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -20,8 +20,7 @@ public final class HomeGetBasicInfoReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 27734
-   * Obf: IEPBGIKMJFE
+   * CmdId: 9267
    * </pre>
    *
    * Protobuf type {@code HomeGetBasicInfoReq}
@@ -246,8 +245,7 @@ public final class HomeGetBasicInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27734
-     * Obf: IEPBGIKMJFE
+     * CmdId: 9267
      * </pre>
      *
      * Protobuf type {@code HomeGetBasicInfoReq}

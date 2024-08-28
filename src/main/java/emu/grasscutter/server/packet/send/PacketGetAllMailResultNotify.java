@@ -19,8 +19,8 @@ public final class PacketGetAllMailResultNotify extends BasePacket {
                 GetAllMailResultNotify.newBuilder()
                         .setTransaction(player.getUid() + "-" + Utils.getCurrentSeconds() + "-" + 0)
                         .setIsCollected(gifts)
-                        .setPacketBeSentNum(1)
-                        .setPacketNum(1);
+                        .setTotalPageCount(1)
+                        .setPageIndex(1);
 
         var inbox = player.getAllMail();
         if (!gifts && inbox.size() > 0) {

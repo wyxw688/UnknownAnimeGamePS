@@ -285,19 +285,14 @@ public final class AvatarInfoOuterClass {
         int key);
 
     /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     * @return Whether the dBGFEJECPJG field is set.
+     * <pre>
+     * PFEBKNGNFPH DBGFEJECPJG = 28; huh?
+     * </pre>
+     *
+     * <code>uint32 trace_effect_id = 28;</code>
+     * @return The traceEffectId.
      */
-    boolean hasDBGFEJECPJG();
-    /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     * @return The dBGFEJECPJG.
-     */
-    emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH getDBGFEJECPJG();
-    /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     */
-    emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder getDBGFEJECPJGOrBuilder();
+    int getTraceEffectId();
 
     /**
      * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
@@ -778,17 +773,9 @@ public final class AvatarInfoOuterClass {
               animHash_ = input.readUInt32();
               break;
             }
-            case 226: {
-              emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder subBuilder = null;
-              if (dBGFEJECPJG_ != null) {
-                subBuilder = dBGFEJECPJG_.toBuilder();
-              }
-              dBGFEJECPJG_ = input.readMessage(emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(dBGFEJECPJG_);
-                dBGFEJECPJG_ = subBuilder.buildPartial();
-              }
+            case 224: {
 
+              traceEffectId_ = input.readUInt32();
               break;
             }
             case 232: {
@@ -1438,30 +1425,19 @@ public final class AvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int DBGFEJECPJG_FIELD_NUMBER = 28;
-    private emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH dBGFEJECPJG_;
+    public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 28;
+    private int traceEffectId_;
     /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     * @return Whether the dBGFEJECPJG field is set.
+     * <pre>
+     * PFEBKNGNFPH DBGFEJECPJG = 28; huh?
+     * </pre>
+     *
+     * <code>uint32 trace_effect_id = 28;</code>
+     * @return The traceEffectId.
      */
     @java.lang.Override
-    public boolean hasDBGFEJECPJG() {
-      return dBGFEJECPJG_ != null;
-    }
-    /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     * @return The dBGFEJECPJG.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH getDBGFEJECPJG() {
-      return dBGFEJECPJG_ == null ? emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.getDefaultInstance() : dBGFEJECPJG_;
-    }
-    /**
-     * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder getDBGFEJECPJGOrBuilder() {
-      return getDBGFEJECPJG();
+    public int getTraceEffectId() {
+      return traceEffectId_;
     }
 
     public static final int EQUIP_AFFIX_LIST_FIELD_NUMBER = 22;
@@ -1850,8 +1826,8 @@ public final class AvatarInfoOuterClass {
       if (animHash_ != 0) {
         output.writeUInt32(27, animHash_);
       }
-      if (dBGFEJECPJG_ != null) {
-        output.writeMessage(28, getDBGFEJECPJG());
+      if (traceEffectId_ != 0) {
+        output.writeUInt32(28, traceEffectId_);
       }
       if (eFFGKHEPHCF_ != 0) {
         output.writeUInt32(29, eFFGKHEPHCF_);
@@ -2052,9 +2028,9 @@ public final class AvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(27, animHash_);
       }
-      if (dBGFEJECPJG_ != null) {
+      if (traceEffectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(28, getDBGFEJECPJG());
+          .computeUInt32Size(28, traceEffectId_);
       }
       if (eFFGKHEPHCF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -2110,11 +2086,8 @@ public final class AvatarInfoOuterClass {
           other.internalGetSkillMap())) return false;
       if (!internalGetProudSkillExtraLevelMap().equals(
           other.internalGetProudSkillExtraLevelMap())) return false;
-      if (hasDBGFEJECPJG() != other.hasDBGFEJECPJG()) return false;
-      if (hasDBGFEJECPJG()) {
-        if (!getDBGFEJECPJG()
-            .equals(other.getDBGFEJECPJG())) return false;
-      }
+      if (getTraceEffectId()
+          != other.getTraceEffectId()) return false;
       if (!getEquipAffixListList()
           .equals(other.getEquipAffixListList())) return false;
       if (!getPendingPromoteRewardListList()
@@ -2203,10 +2176,8 @@ public final class AvatarInfoOuterClass {
         hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
       }
-      if (hasDBGFEJECPJG()) {
-        hash = (37 * hash) + DBGFEJECPJG_FIELD_NUMBER;
-        hash = (53 * hash) + getDBGFEJECPJG().hashCode();
-      }
+      hash = (37 * hash) + TRACE_EFFECT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTraceEffectId();
       if (getEquipAffixListCount() > 0) {
         hash = (37 * hash) + EQUIP_AFFIX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getEquipAffixListList().hashCode();
@@ -2450,12 +2421,8 @@ public final class AvatarInfoOuterClass {
         }
         internalGetMutableSkillMap().clear();
         internalGetMutableProudSkillExtraLevelMap().clear();
-        if (dBGFEJECPJGBuilder_ == null) {
-          dBGFEJECPJG_ = null;
-        } else {
-          dBGFEJECPJG_ = null;
-          dBGFEJECPJGBuilder_ = null;
-        }
+        traceEffectId_ = 0;
+
         if (equipAffixListBuilder_ == null) {
           equipAffixList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000100);
@@ -2561,11 +2528,7 @@ public final class AvatarInfoOuterClass {
         result.skillMap_.makeImmutable();
         result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
         result.proudSkillExtraLevelMap_.makeImmutable();
-        if (dBGFEJECPJGBuilder_ == null) {
-          result.dBGFEJECPJG_ = dBGFEJECPJG_;
-        } else {
-          result.dBGFEJECPJG_ = dBGFEJECPJGBuilder_.build();
-        }
+        result.traceEffectId_ = traceEffectId_;
         if (equipAffixListBuilder_ == null) {
           if (((bitField0_ & 0x00000100) != 0)) {
             equipAffixList_ = java.util.Collections.unmodifiableList(equipAffixList_);
@@ -2696,8 +2659,8 @@ public final class AvatarInfoOuterClass {
             other.internalGetSkillMap());
         internalGetMutableProudSkillExtraLevelMap().mergeFrom(
             other.internalGetProudSkillExtraLevelMap());
-        if (other.hasDBGFEJECPJG()) {
-          mergeDBGFEJECPJG(other.getDBGFEJECPJG());
+        if (other.getTraceEffectId() != 0) {
+          setTraceEffectId(other.getTraceEffectId());
         }
         if (equipAffixListBuilder_ == null) {
           if (!other.equipAffixList_.isEmpty()) {
@@ -4051,123 +4014,47 @@ public final class AvatarInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH dBGFEJECPJG_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder> dBGFEJECPJGBuilder_;
+      private int traceEffectId_ ;
       /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       * @return Whether the dBGFEJECPJG field is set.
+       * <pre>
+       * PFEBKNGNFPH DBGFEJECPJG = 28; huh?
+       * </pre>
+       *
+       * <code>uint32 trace_effect_id = 28;</code>
+       * @return The traceEffectId.
        */
-      public boolean hasDBGFEJECPJG() {
-        return dBGFEJECPJGBuilder_ != null || dBGFEJECPJG_ != null;
+      @java.lang.Override
+      public int getTraceEffectId() {
+        return traceEffectId_;
       }
       /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       * @return The dBGFEJECPJG.
+       * <pre>
+       * PFEBKNGNFPH DBGFEJECPJG = 28; huh?
+       * </pre>
+       *
+       * <code>uint32 trace_effect_id = 28;</code>
+       * @param value The traceEffectId to set.
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH getDBGFEJECPJG() {
-        if (dBGFEJECPJGBuilder_ == null) {
-          return dBGFEJECPJG_ == null ? emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.getDefaultInstance() : dBGFEJECPJG_;
-        } else {
-          return dBGFEJECPJGBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      public Builder setDBGFEJECPJG(emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH value) {
-        if (dBGFEJECPJGBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          dBGFEJECPJG_ = value;
-          onChanged();
-        } else {
-          dBGFEJECPJGBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      public Builder setDBGFEJECPJG(
-          emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder builderForValue) {
-        if (dBGFEJECPJGBuilder_ == null) {
-          dBGFEJECPJG_ = builderForValue.build();
-          onChanged();
-        } else {
-          dBGFEJECPJGBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      public Builder mergeDBGFEJECPJG(emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH value) {
-        if (dBGFEJECPJGBuilder_ == null) {
-          if (dBGFEJECPJG_ != null) {
-            dBGFEJECPJG_ =
-              emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.newBuilder(dBGFEJECPJG_).mergeFrom(value).buildPartial();
-          } else {
-            dBGFEJECPJG_ = value;
-          }
-          onChanged();
-        } else {
-          dBGFEJECPJGBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      public Builder clearDBGFEJECPJG() {
-        if (dBGFEJECPJGBuilder_ == null) {
-          dBGFEJECPJG_ = null;
-          onChanged();
-        } else {
-          dBGFEJECPJG_ = null;
-          dBGFEJECPJGBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      public emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder getDBGFEJECPJGBuilder() {
+      public Builder setTraceEffectId(int value) {
         
+        traceEffectId_ = value;
         onChanged();
-        return getDBGFEJECPJGFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
+       * <pre>
+       * PFEBKNGNFPH DBGFEJECPJG = 28; huh?
+       * </pre>
+       *
+       * <code>uint32 trace_effect_id = 28;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder getDBGFEJECPJGOrBuilder() {
-        if (dBGFEJECPJGBuilder_ != null) {
-          return dBGFEJECPJGBuilder_.getMessageOrBuilder();
-        } else {
-          return dBGFEJECPJG_ == null ?
-              emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.getDefaultInstance() : dBGFEJECPJG_;
-        }
-      }
-      /**
-       * <code>.PFEBKNGNFPH DBGFEJECPJG = 28;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder> 
-          getDBGFEJECPJGFieldBuilder() {
-        if (dBGFEJECPJGBuilder_ == null) {
-          dBGFEJECPJGBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPH.Builder, emu.grasscutter.net.proto.PFEBKNGNFPHOuterClass.PFEBKNGNFPHOrBuilder>(
-                  getDBGFEJECPJG(),
-                  getParentForChildren(),
-                  isClean());
-          dBGFEJECPJG_ = null;
-        }
-        return dBGFEJECPJGBuilder_;
+      public Builder clearTraceEffectId() {
+        
+        traceEffectId_ = 0;
+        onChanged();
+        return this;
       }
 
       private java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> equipAffixList_ =
@@ -5121,7 +5008,7 @@ public final class AvatarInfoOuterClass {
       "o\032\026AvatarFetterInfo.proto\032\033AvatarExpedit" +
       "ionState.proto\032\032AvatarEquipAffixInfo.pro" +
       "to\032\025AvatarExcelInfo.proto\032\021PFEBKNGNFPH.p" +
-      "roto\"\373\t\n\nAvatarInfo\022\026\n\016talent_id_list\030\006 " +
+      "roto\"\361\t\n\nAvatarInfo\022\026\n\016talent_id_list\030\006 " +
       "\003(\r\022!\n\031inherent_proud_skill_list\030\016 \003(\r\022$" +
       "\n\nexcel_info\030\032 \001(\0132\020.AvatarExcelInfo\0225\n\016" +
       "fight_prop_map\030\007 \003(\0132\035.AvatarInfo.FightP" +
@@ -5133,27 +5020,27 @@ public final class AvatarInfoOuterClass {
       "\001(\0132\021.AvatarFetterInfo\022,\n\tskill_map\030\n \003(" +
       "\0132\031.AvatarInfo.SkillMapEntry\022M\n\033proud_sk" +
       "ill_extra_level_map\030\021 \003(\0132(.AvatarInfo.P" +
-      "roudSkillExtraLevelMapEntry\022!\n\013DBGFEJECP" +
-      "JG\030\034 \001(\0132\014.PFEBKNGNFPH\022/\n\020equip_affix_li" +
-      "st\030\026 \003(\0132\025.AvatarEquipAffixInfo\022#\n\033pendi" +
-      "ng_promote_reward_list\030\030 \003(\r\022\033\n\023team_res" +
-      "onance_list\030\024 \003(\r\022\014\n\004guid\030\002 \001(\004\022\021\n\tanim_" +
-      "hash\030\033 \001(\r\022\021\n\tavatar_id\030\001 \001(\r\022\023\n\013avatar_" +
-      "type\030\023 \001(\r\022\036\n\026core_proud_skill_level\030\r \001" +
-      "(\r\022\021\n\tborn_time\030\027 \001(\r\022\020\n\010is_focus\030\022 \001(\010\022" +
-      "\022\n\ncostume_id\030\031 \001(\r\0220\n\020expedition_state\030" +
-      "\020 \001(\0162\026.AvatarExpeditionState\022\026\n\016skill_d" +
-      "epot_id\030\013 \001(\r\022\033\n\023wearing_flycloak_id\030\025 \001" +
-      "(\r\022\022\n\nlife_state\030\004 \001(\r\022\023\n\013EPIPMINFOLP\030\036 " +
-      "\001(\r\022\023\n\013EFFGKHEPHCF\030\035 \001(\r\0323\n\021FightPropMap" +
-      "Entry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032:\n" +
-      "\014PropMapEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(" +
-      "\0132\n.PropValue:\0028\001\0324\n\022SkillLevelMapEntry\022" +
-      "\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032A\n\rSkill" +
-      "MapEntry\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.A" +
-      "vatarSkillInfo:\0028\001\032>\n\034ProudSkillExtraLev" +
-      "elMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\002" +
-      "8\001B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "roudSkillExtraLevelMapEntry\022\027\n\017trace_eff" +
+      "ect_id\030\034 \001(\r\022/\n\020equip_affix_list\030\026 \003(\0132\025" +
+      ".AvatarEquipAffixInfo\022#\n\033pending_promote" +
+      "_reward_list\030\030 \003(\r\022\033\n\023team_resonance_lis" +
+      "t\030\024 \003(\r\022\014\n\004guid\030\002 \001(\004\022\021\n\tanim_hash\030\033 \001(\r" +
+      "\022\021\n\tavatar_id\030\001 \001(\r\022\023\n\013avatar_type\030\023 \001(\r" +
+      "\022\036\n\026core_proud_skill_level\030\r \001(\r\022\021\n\tborn" +
+      "_time\030\027 \001(\r\022\020\n\010is_focus\030\022 \001(\010\022\022\n\ncostume" +
+      "_id\030\031 \001(\r\0220\n\020expedition_state\030\020 \001(\0162\026.Av" +
+      "atarExpeditionState\022\026\n\016skill_depot_id\030\013 " +
+      "\001(\r\022\033\n\023wearing_flycloak_id\030\025 \001(\r\022\022\n\nlife" +
+      "_state\030\004 \001(\r\022\023\n\013EPIPMINFOLP\030\036 \001(\r\022\023\n\013EFF" +
+      "GKHEPHCF\030\035 \001(\r\0323\n\021FightPropMapEntry\022\013\n\003k" +
+      "ey\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032:\n\014PropMapEn" +
+      "try\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.PropVa" +
+      "lue:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key\030\001 \001" +
+      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032A\n\rSkillMapEntry\022\013" +
+      "\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.AvatarSkill" +
+      "Info:\0028\001\032>\n\034ProudSkillExtraLevelMapEntry" +
+      "\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5172,7 +5059,7 @@ public final class AvatarInfoOuterClass {
     internal_static_AvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_descriptor,
-        new java.lang.String[] { "TalentIdList", "InherentProudSkillList", "ExcelInfo", "FightPropMap", "PropMap", "EquipGuidList", "SkillLevelMap", "TrialAvatarInfo", "FetterInfo", "SkillMap", "ProudSkillExtraLevelMap", "DBGFEJECPJG", "EquipAffixList", "PendingPromoteRewardList", "TeamResonanceList", "Guid", "AnimHash", "AvatarId", "AvatarType", "CoreProudSkillLevel", "BornTime", "IsFocus", "CostumeId", "ExpeditionState", "SkillDepotId", "WearingFlycloakId", "LifeState", "EPIPMINFOLP", "EFFGKHEPHCF", });
+        new java.lang.String[] { "TalentIdList", "InherentProudSkillList", "ExcelInfo", "FightPropMap", "PropMap", "EquipGuidList", "SkillLevelMap", "TrialAvatarInfo", "FetterInfo", "SkillMap", "ProudSkillExtraLevelMap", "TraceEffectId", "EquipAffixList", "PendingPromoteRewardList", "TeamResonanceList", "Guid", "AnimHash", "AvatarId", "AvatarType", "CoreProudSkillLevel", "BornTime", "IsFocus", "CostumeId", "ExpeditionState", "SkillDepotId", "WearingFlycloakId", "LifeState", "EPIPMINFOLP", "EFFGKHEPHCF", });
     internal_static_AvatarInfo_FightPropMapEntry_descriptor =
       internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_AvatarInfo_FightPropMapEntry_fieldAccessorTable = new

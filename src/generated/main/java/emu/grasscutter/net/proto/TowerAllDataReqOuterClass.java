@@ -26,8 +26,7 @@ public final class TowerAllDataReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 23009
-   * Obf: OBIBAPPDOKJ
+   * CmdId: 2265
    * </pre>
    *
    * Protobuf type {@code TowerAllDataReq}
@@ -280,8 +279,7 @@ public final class TowerAllDataReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23009
-     * Obf: OBIBAPPDOKJ
+     * CmdId: 2265
      * </pre>
      *
      * Protobuf type {@code TowerAllDataReq}

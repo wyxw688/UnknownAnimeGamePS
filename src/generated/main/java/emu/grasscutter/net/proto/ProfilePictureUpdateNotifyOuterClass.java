@@ -19,17 +19,17 @@ public final class ProfilePictureUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return A list containing the specialProfilePictureList.
      */
     java.util.List<java.lang.Integer> getSpecialProfilePictureListList();
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return The count of specialProfilePictureList.
      */
     int getSpecialProfilePictureListCount();
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
      */
@@ -37,7 +37,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 24838
+   * CmdId: 5942
    * </pre>
    *
    * Protobuf type {@code ProfilePictureUpdateNotify}
@@ -86,7 +86,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 32: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 specialProfilePictureList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -94,7 +94,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
               specialProfilePictureList_.addInt(input.readUInt32());
               break;
             }
-            case 10: {
+            case 34: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -142,10 +142,10 @@ public final class ProfilePictureUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.ProfilePictureUpdateNotifyOuterClass.ProfilePictureUpdateNotify.class, emu.grasscutter.net.proto.ProfilePictureUpdateNotifyOuterClass.ProfilePictureUpdateNotify.Builder.class);
     }
 
-    public static final int SPECIAL_PROFILE_PICTURE_LIST_FIELD_NUMBER = 1;
+    public static final int SPECIAL_PROFILE_PICTURE_LIST_FIELD_NUMBER = 4;
     private com.google.protobuf.Internal.IntList specialProfilePictureList_;
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return A list containing the specialProfilePictureList.
      */
     @java.lang.Override
@@ -154,14 +154,14 @@ public final class ProfilePictureUpdateNotifyOuterClass {
       return specialProfilePictureList_;
     }
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @return The count of specialProfilePictureList.
      */
     public int getSpecialProfilePictureListCount() {
       return specialProfilePictureList_.size();
     }
     /**
-     * <code>repeated uint32 special_profile_picture_list = 1;</code>
+     * <code>repeated uint32 special_profile_picture_list = 4;</code>
      * @param index The index of the element to return.
      * @return The specialProfilePictureList at the given index.
      */
@@ -186,7 +186,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getSpecialProfilePictureListList().size() > 0) {
-        output.writeUInt32NoTag(10);
+        output.writeUInt32NoTag(34);
         output.writeUInt32NoTag(specialProfilePictureListMemoizedSerializedSize);
       }
       for (int i = 0; i < specialProfilePictureList_.size(); i++) {
@@ -344,7 +344,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 24838
+     * CmdId: 5942
      * </pre>
      *
      * Protobuf type {@code ProfilePictureUpdateNotify}
@@ -514,7 +514,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return A list containing the specialProfilePictureList.
        */
       public java.util.List<java.lang.Integer>
@@ -523,14 +523,14 @@ public final class ProfilePictureUpdateNotifyOuterClass {
                  java.util.Collections.unmodifiableList(specialProfilePictureList_) : specialProfilePictureList_;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return The count of specialProfilePictureList.
        */
       public int getSpecialProfilePictureListCount() {
         return specialProfilePictureList_.size();
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param index The index of the element to return.
        * @return The specialProfilePictureList at the given index.
        */
@@ -538,7 +538,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
         return specialProfilePictureList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The specialProfilePictureList to set.
        * @return This builder for chaining.
@@ -551,7 +551,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param value The specialProfilePictureList to add.
        * @return This builder for chaining.
        */
@@ -562,7 +562,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @param values The specialProfilePictureList to add.
        * @return This builder for chaining.
        */
@@ -575,7 +575,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 special_profile_picture_list = 1;</code>
+       * <code>repeated uint32 special_profile_picture_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearSpecialProfilePictureList() {
@@ -653,7 +653,7 @@ public final class ProfilePictureUpdateNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n ProfilePictureUpdateNotify.proto\"B\n\032Pr" +
       "ofilePictureUpdateNotify\022$\n\034special_prof" +
-      "ile_picture_list\030\001 \003(\rB\033\n\031emu.grasscutte" +
+      "ile_picture_list\030\004 \003(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

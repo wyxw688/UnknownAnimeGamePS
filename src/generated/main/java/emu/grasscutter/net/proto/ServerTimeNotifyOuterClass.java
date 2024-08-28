@@ -26,8 +26,7 @@ public final class ServerTimeNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 21404
-   * Obf: LHMEAJDEOAI
+   * CmdId: 28606
    * </pre>
    *
    * Protobuf type {@code ServerTimeNotify}
@@ -280,8 +279,7 @@ public final class ServerTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 21404
-     * Obf: LHMEAJDEOAI
+     * CmdId: 28606
      * </pre>
      *
      * Protobuf type {@code ServerTimeNotify}

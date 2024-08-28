@@ -20,7 +20,7 @@ public final class WorldPlayerReviveReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5872
+   * CmdId: 2401
    * </pre>
    *
    * Protobuf type {@code WorldPlayerReviveReq}
@@ -245,7 +245,7 @@ public final class WorldPlayerReviveReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5872
+     * CmdId: 2401
      * </pre>
      *
      * Protobuf type {@code WorldPlayerReviveReq}

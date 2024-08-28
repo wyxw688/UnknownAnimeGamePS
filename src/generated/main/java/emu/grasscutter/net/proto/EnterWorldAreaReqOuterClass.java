@@ -25,15 +25,14 @@ public final class EnterWorldAreaReqOuterClass {
     int getAreaType();
 
     /**
-     * <code>uint32 area_id = 15;</code>
+     * <code>uint32 area_id = 2;</code>
      * @return The areaId.
      */
     int getAreaId();
   }
   /**
    * <pre>
-   * CmdId: 29482
-   * Obf: OLIJIMJGACD
+   * CmdId: 479
    * </pre>
    *
    * Protobuf type {@code EnterWorldAreaReq}
@@ -80,14 +79,14 @@ public final class EnterWorldAreaReqOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              areaId_ = input.readUInt32();
+              break;
+            }
             case 64: {
 
               areaType_ = input.readUInt32();
-              break;
-            }
-            case 120: {
-
-              areaId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class EnterWorldAreaReqOuterClass {
       return areaType_;
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 15;
+    public static final int AREA_ID_FIELD_NUMBER = 2;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 15;</code>
+     * <code>uint32 area_id = 2;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -158,11 +157,11 @@ public final class EnterWorldAreaReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (areaId_ != 0) {
+        output.writeUInt32(2, areaId_);
+      }
       if (areaType_ != 0) {
         output.writeUInt32(8, areaType_);
-      }
-      if (areaId_ != 0) {
-        output.writeUInt32(15, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class EnterWorldAreaReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (areaId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, areaId_);
+      }
       if (areaType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, areaType_);
-      }
-      if (areaId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class EnterWorldAreaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29482
-     * Obf: OLIJIMJGACD
+     * CmdId: 479
      * </pre>
      *
      * Protobuf type {@code EnterWorldAreaReq}
@@ -501,7 +499,7 @@ public final class EnterWorldAreaReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 15;</code>
+       * <code>uint32 area_id = 2;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class EnterWorldAreaReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 15;</code>
+       * <code>uint32 area_id = 2;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class EnterWorldAreaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 15;</code>
+       * <code>uint32 area_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -597,7 +595,7 @@ public final class EnterWorldAreaReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027EnterWorldAreaReq.proto\"7\n\021EnterWorldA" +
-      "reaReq\022\021\n\tarea_type\030\010 \001(\r\022\017\n\007area_id\030\017 \001" +
+      "reaReq\022\021\n\tarea_type\030\010 \001(\r\022\017\n\007area_id\030\002 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

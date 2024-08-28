@@ -44,8 +44,7 @@ public final class SetPlayerPropReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 25174
-   * Obf: FNNAEOMEFBL
+   * CmdId: 23363
    * </pre>
    *
    * Protobuf type {@code SetPlayerPropReq}
@@ -337,8 +336,7 @@ public final class SetPlayerPropReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25174
-     * Obf: FNNAEOMEFBL
+     * CmdId: 23363
      * </pre>
      *
      * Protobuf type {@code SetPlayerPropReq}

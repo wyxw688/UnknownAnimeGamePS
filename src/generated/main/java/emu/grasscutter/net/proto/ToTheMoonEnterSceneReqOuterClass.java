@@ -19,32 +19,32 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 DKEOBFMAFPK = 5;</code>
+     * @return The dKEOBFMAFPK.
+     */
+    int getDKEOBFMAFPK();
+
+    /**
+     * <code>uint32 CDDPHGDDCCN = 2;</code>
+     * @return The cDDPHGDDCCN.
+     */
+    int getCDDPHGDDCCN();
+
+    /**
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 version = 2;</code>
+     * <code>uint32 version = 4;</code>
      * @return The version.
      */
     int getVersion();
-
-    /**
-     * <code>uint32 AHCPBKOFKNE = 1;</code>
-     * @return The aHCPBKOFKNE.
-     */
-    int getAHCPBKOFKNE();
-
-    /**
-     * <code>uint32 FHIFPHJNIJO = 5;</code>
-     * @return The fHIFPHJNIJO.
-     */
-    int getFHIFPHJNIJO();
   }
   /**
    * <pre>
-   * CmdId: 6163
+   * CmdId: 6116
    * </pre>
    *
    * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -91,24 +91,24 @@ public final class ToTheMoonEnterSceneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              aHCPBKOFKNE_ = input.readUInt32();
+              cDDPHGDDCCN_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 24: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               version_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              fHIFPHJNIJO_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              sceneId_ = input.readUInt32();
+              dKEOBFMAFPK_ = input.readUInt32();
               break;
             }
             default: {
@@ -143,10 +143,32 @@ public final class ToTheMoonEnterSceneReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.class, emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 13;
+    public static final int DKEOBFMAFPK_FIELD_NUMBER = 5;
+    private int dKEOBFMAFPK_;
+    /**
+     * <code>uint32 DKEOBFMAFPK = 5;</code>
+     * @return The dKEOBFMAFPK.
+     */
+    @java.lang.Override
+    public int getDKEOBFMAFPK() {
+      return dKEOBFMAFPK_;
+    }
+
+    public static final int CDDPHGDDCCN_FIELD_NUMBER = 2;
+    private int cDDPHGDDCCN_;
+    /**
+     * <code>uint32 CDDPHGDDCCN = 2;</code>
+     * @return The cDDPHGDDCCN.
+     */
+    @java.lang.Override
+    public int getCDDPHGDDCCN() {
+      return cDDPHGDDCCN_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 3;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 13;</code>
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -154,37 +176,15 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       return sceneId_;
     }
 
-    public static final int VERSION_FIELD_NUMBER = 2;
+    public static final int VERSION_FIELD_NUMBER = 4;
     private int version_;
     /**
-     * <code>uint32 version = 2;</code>
+     * <code>uint32 version = 4;</code>
      * @return The version.
      */
     @java.lang.Override
     public int getVersion() {
       return version_;
-    }
-
-    public static final int AHCPBKOFKNE_FIELD_NUMBER = 1;
-    private int aHCPBKOFKNE_;
-    /**
-     * <code>uint32 AHCPBKOFKNE = 1;</code>
-     * @return The aHCPBKOFKNE.
-     */
-    @java.lang.Override
-    public int getAHCPBKOFKNE() {
-      return aHCPBKOFKNE_;
-    }
-
-    public static final int FHIFPHJNIJO_FIELD_NUMBER = 5;
-    private int fHIFPHJNIJO_;
-    /**
-     * <code>uint32 FHIFPHJNIJO = 5;</code>
-     * @return The fHIFPHJNIJO.
-     */
-    @java.lang.Override
-    public int getFHIFPHJNIJO() {
-      return fHIFPHJNIJO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -201,17 +201,17 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aHCPBKOFKNE_ != 0) {
-        output.writeUInt32(1, aHCPBKOFKNE_);
-      }
-      if (version_ != 0) {
-        output.writeUInt32(2, version_);
-      }
-      if (fHIFPHJNIJO_ != 0) {
-        output.writeUInt32(5, fHIFPHJNIJO_);
+      if (cDDPHGDDCCN_ != 0) {
+        output.writeUInt32(2, cDDPHGDDCCN_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(13, sceneId_);
+        output.writeUInt32(3, sceneId_);
+      }
+      if (version_ != 0) {
+        output.writeUInt32(4, version_);
+      }
+      if (dKEOBFMAFPK_ != 0) {
+        output.writeUInt32(5, dKEOBFMAFPK_);
       }
       unknownFields.writeTo(output);
     }
@@ -222,21 +222,21 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aHCPBKOFKNE_ != 0) {
+      if (cDDPHGDDCCN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, aHCPBKOFKNE_);
-      }
-      if (version_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, version_);
-      }
-      if (fHIFPHJNIJO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, fHIFPHJNIJO_);
+          .computeUInt32Size(2, cDDPHGDDCCN_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sceneId_);
+          .computeUInt32Size(3, sceneId_);
+      }
+      if (version_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, version_);
+      }
+      if (dKEOBFMAFPK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, dKEOBFMAFPK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -253,14 +253,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq other = (emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq) obj;
 
+      if (getDKEOBFMAFPK()
+          != other.getDKEOBFMAFPK()) return false;
+      if (getCDDPHGDDCCN()
+          != other.getCDDPHGDDCCN()) return false;
       if (getSceneId()
           != other.getSceneId()) return false;
       if (getVersion()
           != other.getVersion()) return false;
-      if (getAHCPBKOFKNE()
-          != other.getAHCPBKOFKNE()) return false;
-      if (getFHIFPHJNIJO()
-          != other.getFHIFPHJNIJO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -272,14 +272,14 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + DKEOBFMAFPK_FIELD_NUMBER;
+      hash = (53 * hash) + getDKEOBFMAFPK();
+      hash = (37 * hash) + CDDPHGDDCCN_FIELD_NUMBER;
+      hash = (53 * hash) + getCDDPHGDDCCN();
       hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getVersion();
-      hash = (37 * hash) + AHCPBKOFKNE_FIELD_NUMBER;
-      hash = (53 * hash) + getAHCPBKOFKNE();
-      hash = (37 * hash) + FHIFPHJNIJO_FIELD_NUMBER;
-      hash = (53 * hash) + getFHIFPHJNIJO();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -377,7 +377,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6163
+     * CmdId: 6116
      * </pre>
      *
      * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -417,13 +417,13 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        dKEOBFMAFPK_ = 0;
+
+        cDDPHGDDCCN_ = 0;
+
         sceneId_ = 0;
 
         version_ = 0;
-
-        aHCPBKOFKNE_ = 0;
-
-        fHIFPHJNIJO_ = 0;
 
         return this;
       }
@@ -451,10 +451,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq buildPartial() {
         emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq result = new emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq(this);
+        result.dKEOBFMAFPK_ = dKEOBFMAFPK_;
+        result.cDDPHGDDCCN_ = cDDPHGDDCCN_;
         result.sceneId_ = sceneId_;
         result.version_ = version_;
-        result.aHCPBKOFKNE_ = aHCPBKOFKNE_;
-        result.fHIFPHJNIJO_ = fHIFPHJNIJO_;
         onBuilt();
         return result;
       }
@@ -503,17 +503,17 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq other) {
         if (other == emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.getDefaultInstance()) return this;
+        if (other.getDKEOBFMAFPK() != 0) {
+          setDKEOBFMAFPK(other.getDKEOBFMAFPK());
+        }
+        if (other.getCDDPHGDDCCN() != 0) {
+          setCDDPHGDDCCN(other.getCDDPHGDDCCN());
+        }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
         if (other.getVersion() != 0) {
           setVersion(other.getVersion());
-        }
-        if (other.getAHCPBKOFKNE() != 0) {
-          setAHCPBKOFKNE(other.getAHCPBKOFKNE());
-        }
-        if (other.getFHIFPHJNIJO() != 0) {
-          setFHIFPHJNIJO(other.getFHIFPHJNIJO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -544,9 +544,71 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
 
+      private int dKEOBFMAFPK_ ;
+      /**
+       * <code>uint32 DKEOBFMAFPK = 5;</code>
+       * @return The dKEOBFMAFPK.
+       */
+      @java.lang.Override
+      public int getDKEOBFMAFPK() {
+        return dKEOBFMAFPK_;
+      }
+      /**
+       * <code>uint32 DKEOBFMAFPK = 5;</code>
+       * @param value The dKEOBFMAFPK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDKEOBFMAFPK(int value) {
+        
+        dKEOBFMAFPK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DKEOBFMAFPK = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDKEOBFMAFPK() {
+        
+        dKEOBFMAFPK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cDDPHGDDCCN_ ;
+      /**
+       * <code>uint32 CDDPHGDDCCN = 2;</code>
+       * @return The cDDPHGDDCCN.
+       */
+      @java.lang.Override
+      public int getCDDPHGDDCCN() {
+        return cDDPHGDDCCN_;
+      }
+      /**
+       * <code>uint32 CDDPHGDDCCN = 2;</code>
+       * @param value The cDDPHGDDCCN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCDDPHGDDCCN(int value) {
+        
+        cDDPHGDDCCN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CDDPHGDDCCN = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCDDPHGDDCCN() {
+        
+        cDDPHGDDCCN_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -554,7 +616,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -565,7 +627,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 13;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -577,7 +639,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int version_ ;
       /**
-       * <code>uint32 version = 2;</code>
+       * <code>uint32 version = 4;</code>
        * @return The version.
        */
       @java.lang.Override
@@ -585,7 +647,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return version_;
       }
       /**
-       * <code>uint32 version = 2;</code>
+       * <code>uint32 version = 4;</code>
        * @param value The version to set.
        * @return This builder for chaining.
        */
@@ -596,74 +658,12 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 version = 2;</code>
+       * <code>uint32 version = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearVersion() {
         
         version_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aHCPBKOFKNE_ ;
-      /**
-       * <code>uint32 AHCPBKOFKNE = 1;</code>
-       * @return The aHCPBKOFKNE.
-       */
-      @java.lang.Override
-      public int getAHCPBKOFKNE() {
-        return aHCPBKOFKNE_;
-      }
-      /**
-       * <code>uint32 AHCPBKOFKNE = 1;</code>
-       * @param value The aHCPBKOFKNE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAHCPBKOFKNE(int value) {
-        
-        aHCPBKOFKNE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 AHCPBKOFKNE = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAHCPBKOFKNE() {
-        
-        aHCPBKOFKNE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int fHIFPHJNIJO_ ;
-      /**
-       * <code>uint32 FHIFPHJNIJO = 5;</code>
-       * @return The fHIFPHJNIJO.
-       */
-      @java.lang.Override
-      public int getFHIFPHJNIJO() {
-        return fHIFPHJNIJO_;
-      }
-      /**
-       * <code>uint32 FHIFPHJNIJO = 5;</code>
-       * @param value The fHIFPHJNIJO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFHIFPHJNIJO(int value) {
-        
-        fHIFPHJNIJO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 FHIFPHJNIJO = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFHIFPHJNIJO() {
-        
-        fHIFPHJNIJO_ = 0;
         onChanged();
         return this;
       }
@@ -735,9 +735,9 @@ public final class ToTheMoonEnterSceneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ToTheMoonEnterSceneReq.proto\"e\n\026ToTheM" +
-      "oonEnterSceneReq\022\020\n\010scene_id\030\r \001(\r\022\017\n\007ve" +
-      "rsion\030\002 \001(\r\022\023\n\013AHCPBKOFKNE\030\001 \001(\r\022\023\n\013FHIF" +
-      "PHJNIJO\030\005 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "oonEnterSceneReq\022\023\n\013DKEOBFMAFPK\030\005 \001(\r\022\023\n" +
+      "\013CDDPHGDDCCN\030\002 \001(\r\022\020\n\010scene_id\030\003 \001(\r\022\017\n\007" +
+      "version\030\004 \001(\rB\033\n\031emu.grasscutter.net.pro" +
       "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -749,7 +749,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     internal_static_ToTheMoonEnterSceneReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ToTheMoonEnterSceneReq_descriptor,
-        new java.lang.String[] { "SceneId", "Version", "AHCPBKOFKNE", "FHIFPHJNIJO", });
+        new java.lang.String[] { "DKEOBFMAFPK", "CDDPHGDDCCN", "SceneId", "Version", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

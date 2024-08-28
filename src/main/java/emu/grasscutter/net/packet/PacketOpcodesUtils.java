@@ -11,25 +11,22 @@ public class PacketOpcodesUtils {
     public static final Set<Integer> LOOP_PACKETS =
             Set.of(
                     PacketOpcodes.PingReq,
-                    PacketOpcodes.PingRsp,
-                    PacketOpcodes.WorldPlayerRTTNotify,
-                    PacketOpcodes.UnionCmdNotify,
-                    PacketOpcodes.SceneTimeNotify,
-                    PacketOpcodes.QueryPathReq,
-                    PacketOpcodes.QueryPathRsp,
+                    // PacketOpcodes.PingRsp,
+                    // PacketOpcodes.WorldPlayerRTTNotify,
+                    // PacketOpcodes.UnionCmdNotify,
+                    // PacketOpcodes.SceneTimeNotify,
+                    // PacketOpcodes.QueryPathReq,
+                    // PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
-                    PacketOpcodes.PlayerTimeNotify,
-                    PacketOpcodes.PlayerPropNotify,
+                    // PacketOpcodes.PlayerTimeNotify,
+                    // PacketOpcodes.PlayerPropNotify,
 
-                    PacketOpcodes.AbilityInvocationsNotify,
-                    PacketOpcodes.CombatInvocationsNotify,
-//                    PacketOpcodes.PlayerGameTimeNotify,
-                    PacketOpcodes.AvatarPropNotify,
-                    PacketOpcodes.AvatarSatiationDataNotify,
-                    PacketOpcodes.UNKNOWN1,
-                    PacketOpcodes.UNKNOWN2,
-                    PacketOpcodes.UNKNOWN3
+                    // PacketOpcodes.AbilityInvocationsNotify,
+                    // PacketOpcodes.CombatInvocationsNotify,
+                    // PacketOpcodes.PlayerGameTimeNotify,
+                    // PacketOpcodes.AvatarPropNotify,
+                    PacketOpcodes.AvatarSatiationDataNotify
             );
     private static final Int2ObjectMap<String> opcodeMap;
 

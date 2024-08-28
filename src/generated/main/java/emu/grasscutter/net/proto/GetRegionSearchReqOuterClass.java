@@ -20,8 +20,7 @@ public final class GetRegionSearchReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2030
-   * Obf: BHEPKPEBEGB
+   * CmdId: 27191
    * </pre>
    *
    * Protobuf type {@code GetRegionSearchReq}
@@ -246,8 +245,7 @@ public final class GetRegionSearchReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2030
-     * Obf: BHEPKPEBEGB
+     * CmdId: 27191
      * </pre>
      *
      * Protobuf type {@code GetRegionSearchReq}

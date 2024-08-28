@@ -19,13 +19,13 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 parent_quest_id = 1;</code>
+     * <code>uint32 parent_quest_id = 10;</code>
      * @return The parentQuestId.
      */
     int getParentQuestId();
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -38,7 +38,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9194
+   * CmdId: 28710
    * </pre>
    *
    * Protobuf type {@code GetParentQuestVideoKeyRsp}
@@ -85,12 +85,12 @@ public final class GetParentQuestVideoKeyRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 80: {
 
               parentQuestId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -132,10 +132,10 @@ public final class GetParentQuestVideoKeyRspOuterClass {
               emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.class, emu.grasscutter.net.proto.GetParentQuestVideoKeyRspOuterClass.GetParentQuestVideoKeyRsp.Builder.class);
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 1;
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 10;
     private int parentQuestId_;
     /**
-     * <code>uint32 parent_quest_id = 1;</code>
+     * <code>uint32 parent_quest_id = 10;</code>
      * @return The parentQuestId.
      */
     @java.lang.Override
@@ -143,10 +143,10 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       return parentQuestId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -180,10 +180,10 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (parentQuestId_ != 0) {
-        output.writeUInt32(1, parentQuestId_);
+        output.writeUInt32(10, parentQuestId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(14, retcode_);
       }
       if (videoKey_ != 0L) {
         output.writeUInt64(15, videoKey_);
@@ -199,11 +199,11 @@ public final class GetParentQuestVideoKeyRspOuterClass {
       size = 0;
       if (parentQuestId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, parentQuestId_);
+          .computeUInt32Size(10, parentQuestId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       if (videoKey_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
@@ -345,7 +345,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9194
+     * CmdId: 28710
      * </pre>
      *
      * Protobuf type {@code GetParentQuestVideoKeyRsp}
@@ -508,7 +508,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
 
       private int parentQuestId_ ;
       /**
-       * <code>uint32 parent_quest_id = 1;</code>
+       * <code>uint32 parent_quest_id = 10;</code>
        * @return The parentQuestId.
        */
       @java.lang.Override
@@ -516,7 +516,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return parentQuestId_;
       }
       /**
-       * <code>uint32 parent_quest_id = 1;</code>
+       * <code>uint32 parent_quest_id = 10;</code>
        * @param value The parentQuestId to set.
        * @return This builder for chaining.
        */
@@ -527,7 +527,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 parent_quest_id = 1;</code>
+       * <code>uint32 parent_quest_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
@@ -539,7 +539,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -547,7 +547,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -558,7 +558,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -667,7 +667,7 @@ public final class GetParentQuestVideoKeyRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037GetParentQuestVideoKeyRsp.proto\"X\n\031Get" +
       "ParentQuestVideoKeyRsp\022\027\n\017parent_quest_i" +
-      "d\030\001 \001(\r\022\017\n\007retcode\030\010 \001(\005\022\021\n\tvideo_key\030\017 " +
+      "d\030\n \001(\r\022\017\n\007retcode\030\016 \001(\005\022\021\n\tvideo_key\030\017 " +
       "\001(\004B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

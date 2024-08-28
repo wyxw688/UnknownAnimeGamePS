@@ -34,7 +34,7 @@ public class PacketGetDailyDungeonEntryInfoRsp extends BasePacket {
 
         builder.setDungeonEntryId(dungeonEntryId);
         builder.setDungeonEntryConfigId(id);
-        builder.setRecommendDungeonEntryInfo(dungeonEntryInfo);
+        // builder.setRecommendDungeonEntryInfo(dungeonEntryInfo);
         return builder.build();
     }
 }
