@@ -114,3 +114,7 @@ chmod +x gradlew
 ### Troubleshooting
 - Fiddler or any proxy is required.
 
+### Resources credit
+- Dimbreath | AnimeGameData (BinOutput, ExcelBinOutput, TextMap) - https://github.com/DimbreathBot/AnimeGameData
+- Hiro420 | GS_Lua (Scripts) - https://github.com/Hiro420/GS_Lua/tree/5.0.0
+- YuukiPS | GC-Resources (ScriptSceneData, Server) - https://gitlab.com/YuukiPS/GC-Resources
