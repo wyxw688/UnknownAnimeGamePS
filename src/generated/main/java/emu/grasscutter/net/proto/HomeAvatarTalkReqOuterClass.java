@@ -25,14 +25,14 @@ public final class HomeAvatarTalkReqOuterClass {
     int getTalkId();
 
     /**
-     * <code>uint32 avatar_id = 15;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
    * <pre>
-   * CmdId: 29305
+   * CmdId: 21992
    * </pre>
    *
    * Protobuf type {@code HomeAvatarTalkReq}
@@ -84,7 +84,7 @@ public final class HomeAvatarTalkReqOuterClass {
               talkId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 64: {
 
               avatarId_ = input.readUInt32();
               break;
@@ -132,10 +132,10 @@ public final class HomeAvatarTalkReqOuterClass {
       return talkId_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 15;
+    public static final int AVATAR_ID_FIELD_NUMBER = 8;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 15;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -161,7 +161,7 @@ public final class HomeAvatarTalkReqOuterClass {
         output.writeUInt32(4, talkId_);
       }
       if (avatarId_ != 0) {
-        output.writeUInt32(15, avatarId_);
+        output.writeUInt32(8, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -178,7 +178,7 @@ public final class HomeAvatarTalkReqOuterClass {
       }
       if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, avatarId_);
+          .computeUInt32Size(8, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -311,7 +311,7 @@ public final class HomeAvatarTalkReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 29305
+     * CmdId: 21992
      * </pre>
      *
      * Protobuf type {@code HomeAvatarTalkReq}
@@ -499,7 +499,7 @@ public final class HomeAvatarTalkReqOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class HomeAvatarTalkReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 15;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -595,7 +595,7 @@ public final class HomeAvatarTalkReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeAvatarTalkReq.proto\"7\n\021HomeAvatarT" +
-      "alkReq\022\017\n\007talk_id\030\004 \001(\r\022\021\n\tavatar_id\030\017 \001" +
+      "alkReq\022\017\n\007talk_id\030\004 \001(\r\022\021\n\tavatar_id\030\010 \001" +
       "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

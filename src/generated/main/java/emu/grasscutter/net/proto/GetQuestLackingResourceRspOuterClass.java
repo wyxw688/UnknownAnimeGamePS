@@ -19,35 +19,35 @@ public final class GetQuestLackingResourceRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     * @return Whether the bCOAJLAHNNM field is set.
-     */
-    boolean hasBCOAJLAHNNM();
-    /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     * @return The bCOAJLAHNNM.
-     */
-    emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getBCOAJLAHNNM();
-    /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     */
-    emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getBCOAJLAHNNMOrBuilder();
-
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 quest_id = 15;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     int getQuestId();
+
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     * @return Whether the lackingResourcesInfo field is set.
+     */
+    boolean hasLackingResourcesInfo();
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     * @return The lackingResourcesInfo.
+     */
+    emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getLackingResourcesInfo();
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     */
+    emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getLackingResourcesInfoOrBuilder();
+
+    /**
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 25570
+   * CmdId: 27981
    * </pre>
    *
    * Protobuf type {@code GetQuestLackingResourceRsp}
@@ -94,27 +94,27 @@ public final class GetQuestLackingResourceRspOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
-              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder subBuilder = null;
-              if (bCOAJLAHNNM_ != null) {
-                subBuilder = bCOAJLAHNNM_.toBuilder();
-              }
-              bCOAJLAHNNM_ = input.readMessage(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(bCOAJLAHNNM_);
-                bCOAJLAHNNM_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 40: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 120: {
+            case 32: {
 
               questId_ = input.readUInt32();
+              break;
+            }
+            case 66: {
+              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder subBuilder = null;
+              if (lackingResourcesInfo_ != null) {
+                subBuilder = lackingResourcesInfo_.toBuilder();
+              }
+              lackingResourcesInfo_ = input.readMessage(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(lackingResourcesInfo_);
+                lackingResourcesInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 80: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -149,52 +149,52 @@ public final class GetQuestLackingResourceRspOuterClass {
               emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.class, emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.Builder.class);
     }
 
-    public static final int BCOAJLAHNNM_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo bCOAJLAHNNM_;
-    /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     * @return Whether the bCOAJLAHNNM field is set.
-     */
-    @java.lang.Override
-    public boolean hasBCOAJLAHNNM() {
-      return bCOAJLAHNNM_ != null;
-    }
-    /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     * @return The bCOAJLAHNNM.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getBCOAJLAHNNM() {
-      return bCOAJLAHNNM_ == null ? emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : bCOAJLAHNNM_;
-    }
-    /**
-     * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getBCOAJLAHNNMOrBuilder() {
-      return getBCOAJLAHNNM();
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 5;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 5;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int QUEST_ID_FIELD_NUMBER = 15;
+    public static final int QUEST_ID_FIELD_NUMBER = 4;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 15;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     @java.lang.Override
     public int getQuestId() {
       return questId_;
+    }
+
+    public static final int LACKING_RESOURCES_INFO_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo lackingResourcesInfo_;
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     * @return Whether the lackingResourcesInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasLackingResourcesInfo() {
+      return lackingResourcesInfo_ != null;
+    }
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     * @return The lackingResourcesInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getLackingResourcesInfo() {
+      return lackingResourcesInfo_ == null ? emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : lackingResourcesInfo_;
+    }
+    /**
+     * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getLackingResourcesInfoOrBuilder() {
+      return getLackingResourcesInfo();
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 10;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 10;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -211,14 +211,14 @@ public final class GetQuestLackingResourceRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bCOAJLAHNNM_ != null) {
-        output.writeMessage(4, getBCOAJLAHNNM());
+      if (questId_ != 0) {
+        output.writeUInt32(4, questId_);
+      }
+      if (lackingResourcesInfo_ != null) {
+        output.writeMessage(8, getLackingResourcesInfo());
       }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
-      }
-      if (questId_ != 0) {
-        output.writeUInt32(15, questId_);
+        output.writeInt32(10, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,17 +229,17 @@ public final class GetQuestLackingResourceRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bCOAJLAHNNM_ != null) {
+      if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getBCOAJLAHNNM());
+          .computeUInt32Size(4, questId_);
+      }
+      if (lackingResourcesInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, getLackingResourcesInfo());
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
-      }
-      if (questId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, questId_);
+          .computeInt32Size(10, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -256,15 +256,15 @@ public final class GetQuestLackingResourceRspOuterClass {
       }
       emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp other = (emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp) obj;
 
-      if (hasBCOAJLAHNNM() != other.hasBCOAJLAHNNM()) return false;
-      if (hasBCOAJLAHNNM()) {
-        if (!getBCOAJLAHNNM()
-            .equals(other.getBCOAJLAHNNM())) return false;
+      if (getQuestId()
+          != other.getQuestId()) return false;
+      if (hasLackingResourcesInfo() != other.hasLackingResourcesInfo()) return false;
+      if (hasLackingResourcesInfo()) {
+        if (!getLackingResourcesInfo()
+            .equals(other.getLackingResourcesInfo())) return false;
       }
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getQuestId()
-          != other.getQuestId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,14 +276,14 @@ public final class GetQuestLackingResourceRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasBCOAJLAHNNM()) {
-        hash = (37 * hash) + BCOAJLAHNNM_FIELD_NUMBER;
-        hash = (53 * hash) + getBCOAJLAHNNM().hashCode();
+      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestId();
+      if (hasLackingResourcesInfo()) {
+        hash = (37 * hash) + LACKING_RESOURCES_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getLackingResourcesInfo().hashCode();
       }
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQuestId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -381,7 +381,7 @@ public final class GetQuestLackingResourceRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25570
+     * CmdId: 27981
      * </pre>
      *
      * Protobuf type {@code GetQuestLackingResourceRsp}
@@ -421,15 +421,15 @@ public final class GetQuestLackingResourceRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (bCOAJLAHNNMBuilder_ == null) {
-          bCOAJLAHNNM_ = null;
+        questId_ = 0;
+
+        if (lackingResourcesInfoBuilder_ == null) {
+          lackingResourcesInfo_ = null;
         } else {
-          bCOAJLAHNNM_ = null;
-          bCOAJLAHNNMBuilder_ = null;
+          lackingResourcesInfo_ = null;
+          lackingResourcesInfoBuilder_ = null;
         }
         retcode_ = 0;
-
-        questId_ = 0;
 
         return this;
       }
@@ -457,13 +457,13 @@ public final class GetQuestLackingResourceRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp buildPartial() {
         emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp result = new emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp(this);
-        if (bCOAJLAHNNMBuilder_ == null) {
-          result.bCOAJLAHNNM_ = bCOAJLAHNNM_;
+        result.questId_ = questId_;
+        if (lackingResourcesInfoBuilder_ == null) {
+          result.lackingResourcesInfo_ = lackingResourcesInfo_;
         } else {
-          result.bCOAJLAHNNM_ = bCOAJLAHNNMBuilder_.build();
+          result.lackingResourcesInfo_ = lackingResourcesInfoBuilder_.build();
         }
         result.retcode_ = retcode_;
-        result.questId_ = questId_;
         onBuilt();
         return result;
       }
@@ -512,14 +512,14 @@ public final class GetQuestLackingResourceRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp other) {
         if (other == emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.getDefaultInstance()) return this;
-        if (other.hasBCOAJLAHNNM()) {
-          mergeBCOAJLAHNNM(other.getBCOAJLAHNNM());
+        if (other.getQuestId() != 0) {
+          setQuestId(other.getQuestId());
+        }
+        if (other.hasLackingResourcesInfo()) {
+          mergeLackingResourcesInfo(other.getLackingResourcesInfo());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getQuestId() != 0) {
-          setQuestId(other.getQuestId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,159 +550,9 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo bCOAJLAHNNM_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder> bCOAJLAHNNMBuilder_;
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       * @return Whether the bCOAJLAHNNM field is set.
-       */
-      public boolean hasBCOAJLAHNNM() {
-        return bCOAJLAHNNMBuilder_ != null || bCOAJLAHNNM_ != null;
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       * @return The bCOAJLAHNNM.
-       */
-      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getBCOAJLAHNNM() {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          return bCOAJLAHNNM_ == null ? emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : bCOAJLAHNNM_;
-        } else {
-          return bCOAJLAHNNMBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public Builder setBCOAJLAHNNM(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo value) {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          bCOAJLAHNNM_ = value;
-          onChanged();
-        } else {
-          bCOAJLAHNNMBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public Builder setBCOAJLAHNNM(
-          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder builderForValue) {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          bCOAJLAHNNM_ = builderForValue.build();
-          onChanged();
-        } else {
-          bCOAJLAHNNMBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public Builder mergeBCOAJLAHNNM(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo value) {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          if (bCOAJLAHNNM_ != null) {
-            bCOAJLAHNNM_ =
-              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.newBuilder(bCOAJLAHNNM_).mergeFrom(value).buildPartial();
-          } else {
-            bCOAJLAHNNM_ = value;
-          }
-          onChanged();
-        } else {
-          bCOAJLAHNNMBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public Builder clearBCOAJLAHNNM() {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          bCOAJLAHNNM_ = null;
-          onChanged();
-        } else {
-          bCOAJLAHNNM_ = null;
-          bCOAJLAHNNMBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder getBCOAJLAHNNMBuilder() {
-        
-        onChanged();
-        return getBCOAJLAHNNMFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getBCOAJLAHNNMOrBuilder() {
-        if (bCOAJLAHNNMBuilder_ != null) {
-          return bCOAJLAHNNMBuilder_.getMessageOrBuilder();
-        } else {
-          return bCOAJLAHNNM_ == null ?
-              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : bCOAJLAHNNM_;
-        }
-      }
-      /**
-       * <code>.LackingResourceInfo BCOAJLAHNNM = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder> 
-          getBCOAJLAHNNMFieldBuilder() {
-        if (bCOAJLAHNNMBuilder_ == null) {
-          bCOAJLAHNNMBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder>(
-                  getBCOAJLAHNNM(),
-                  getParentForChildren(),
-                  isClean());
-          bCOAJLAHNNM_ = null;
-        }
-        return bCOAJLAHNNMBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 15;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -710,7 +560,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 15;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -721,12 +571,162 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 15;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
         
         questId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo lackingResourcesInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder> lackingResourcesInfoBuilder_;
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       * @return Whether the lackingResourcesInfo field is set.
+       */
+      public boolean hasLackingResourcesInfo() {
+        return lackingResourcesInfoBuilder_ != null || lackingResourcesInfo_ != null;
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       * @return The lackingResourcesInfo.
+       */
+      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo getLackingResourcesInfo() {
+        if (lackingResourcesInfoBuilder_ == null) {
+          return lackingResourcesInfo_ == null ? emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : lackingResourcesInfo_;
+        } else {
+          return lackingResourcesInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public Builder setLackingResourcesInfo(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo value) {
+        if (lackingResourcesInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          lackingResourcesInfo_ = value;
+          onChanged();
+        } else {
+          lackingResourcesInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public Builder setLackingResourcesInfo(
+          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder builderForValue) {
+        if (lackingResourcesInfoBuilder_ == null) {
+          lackingResourcesInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          lackingResourcesInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public Builder mergeLackingResourcesInfo(emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo value) {
+        if (lackingResourcesInfoBuilder_ == null) {
+          if (lackingResourcesInfo_ != null) {
+            lackingResourcesInfo_ =
+              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.newBuilder(lackingResourcesInfo_).mergeFrom(value).buildPartial();
+          } else {
+            lackingResourcesInfo_ = value;
+          }
+          onChanged();
+        } else {
+          lackingResourcesInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public Builder clearLackingResourcesInfo() {
+        if (lackingResourcesInfoBuilder_ == null) {
+          lackingResourcesInfo_ = null;
+          onChanged();
+        } else {
+          lackingResourcesInfo_ = null;
+          lackingResourcesInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder getLackingResourcesInfoBuilder() {
+        
+        onChanged();
+        return getLackingResourcesInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      public emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder getLackingResourcesInfoOrBuilder() {
+        if (lackingResourcesInfoBuilder_ != null) {
+          return lackingResourcesInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return lackingResourcesInfo_ == null ?
+              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.getDefaultInstance() : lackingResourcesInfo_;
+        }
+      }
+      /**
+       * <code>.LackingResourceInfo lacking_resources_info = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder> 
+          getLackingResourcesInfoFieldBuilder() {
+        if (lackingResourcesInfoBuilder_ == null) {
+          lackingResourcesInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfo.Builder, emu.grasscutter.net.proto.LackingResourceInfoOuterClass.LackingResourceInfoOrBuilder>(
+                  getLackingResourcesInfo(),
+                  getParentForChildren(),
+                  isClean());
+          lackingResourcesInfo_ = null;
+        }
+        return lackingResourcesInfoBuilder_;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -798,11 +798,11 @@ public final class GetQuestLackingResourceRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n GetQuestLackingResourceRsp.proto\032\031Lack" +
-      "ingResourceInfo.proto\"j\n\032GetQuestLacking" +
-      "ResourceRsp\022)\n\013BCOAJLAHNNM\030\004 \001(\0132\024.Lacki" +
-      "ngResourceInfo\022\017\n\007retcode\030\005 \001(\005\022\020\n\010quest" +
-      "_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "ingResourceInfo.proto\"u\n\032GetQuestLacking" +
+      "ResourceRsp\022\020\n\010quest_id\030\004 \001(\r\0224\n\026lacking" +
+      "_resources_info\030\010 \001(\0132\024.LackingResourceI" +
+      "nfo\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -814,7 +814,7 @@ public final class GetQuestLackingResourceRspOuterClass {
     internal_static_GetQuestLackingResourceRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetQuestLackingResourceRsp_descriptor,
-        new java.lang.String[] { "BCOAJLAHNNM", "Retcode", "QuestId", });
+        new java.lang.String[] { "QuestId", "LackingResourcesInfo", "Retcode", });
     emu.grasscutter.net.proto.LackingResourceInfoOuterClass.getDescriptor();
   }
 

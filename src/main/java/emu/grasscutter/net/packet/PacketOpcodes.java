@@ -421,6 +421,27 @@ public class PacketOpcodes {
     public static final int PlayerGetForceQuitBanInfoRsp = 29159;
     public static final int PlayerPreEnterMpNotify = 23352;
     public static final int WorldPlayerInfoNotify = 23024;
+    public static final int WeaponAwakenReq = 20421;
+    public static final int WeaponAwakenRsp = 24076;
+    public static final int WeaponPromoteReq = 3230;
+    public static final int WeaponPromoteRsp = 25392;
+    public static final int WeaponUpgradeReq = 7713;
+    public static final int WeaponUpgradeRsp = 22661;
+    public static final int CalcWeaponUpgradeReturnItemsReq = 20908;
+    public static final int CalcWeaponUpgradeReturnItemsRsp = 6706;
+    public static final int SetEquipLockStateReq = 5750;
+    public static final int SetEquipLockStateRsp = 26633;
+    public static final int AvatarUpgradeReq = 5978;
+    public static final int AvatarUpgradeRsp = 1;
+    public static final int AvatarSkillUpgradeReq = 25062;
+    public static final int AvatarSkillUpgradeRsp = 7799;
+    public static final int AvatarUnlockTalentNotify = 28793;
+    public static final int HomeAvatarTalkReq = 21992;
+    public static final int GetQuestLackingResourceRsp = 27981;
+    public static final int QueryPathReq = 2339;
+    public static final int QueryPathRsp = 2350;
+    public static final int UnlockTransPointReq = 3518;
+    public static final int UnlockTransPointRsp = 1; // proto
 
     // Obfuscated
     public static final int Unk5000_GAHMPOELOAL = 24500;
@@ -471,7 +492,6 @@ public class PacketOpcodes {
     public static final int Unk5000_DMCOGBLAMEB = 24532;
     public static final int Unk5000_MHIMJHAGCFK = 4296;
     public static final int Unk5000_DIOOOOHGFCL = 9798;
-    public static final int Unk5000_PBOJGDCDGAB = 24076;
     public static final int Unk5000_BNAGKNMHKEJ = 3881;
     public static final int Unk5000_HOMGFPFFCGH = 20141;
     public static final int Unk5000_ADEGLMGLLDB = 5870;
@@ -626,7 +646,6 @@ public class PacketOpcodes {
     public static final int Unk5000_NHHMFLNKKHD = 8624;
     public static final int Unk5000_FALEKHBHJHH = 9223;
     public static final int Unk5000_MKNIEICFBDE = 28354;
-    public static final int Unk5000_FFFJDNJOABC = 22661;
     public static final int Unk5000_DAMMNDMMOLF = 21083;
     public static final int Unk5000_EBGNPMPEOAF = 22486;
     public static final int Unk5000_NBIMILNJPCF = 25141;
@@ -735,7 +754,6 @@ public class PacketOpcodes {
     public static final int Unk5000_MPKAJLCOJHH = 28698;
     public static final int Unk5000_JFHOGFFGPDN = 29740;
     public static final int Unk5000_OIKFPAMBPNG = 7039;
-    public static final int Unk5000_GILEMAIABLN = 26633;
     public static final int Unk5000_JGGIOHPGLKF = 21785;
     public static final int Unk5000_MNELDMONHPA = 21309;
     public static final int Unk5000_MGPGLHIIBNH = 28690;
@@ -790,7 +808,6 @@ public class PacketOpcodes {
     public static final int Unk5000_NPJGDCDPHIJ = 21194;
     public static final int Unk5000_PBJDAJJGMNH = 22638;
     public static final int Unk5000_HLFBEAHFPNP = 27688;
-    public static final int Unk5000_LAGMEAKAJFD = 5750;
     public static final int Unk5000_PFCPDLGGCIG = 1967;
     public static final int Unk5000_CLPBFAIBPHG = 23734;
     public static final int Unk5000_COEFPLKDEGD = 24004;
@@ -837,7 +854,6 @@ public class PacketOpcodes {
     public static final int Unk5000_DKLHOJPAGGG = 920;
     public static final int Unk5000_OGFFICMJNBE = 8903;
     public static final int Unk5000_MBJEGOBPAIK = 27472;
-    public static final int Unk5000_KIBLFLPNBEN = 3230;
     public static final int Unk5000_PGCMDLDLPAH = 23160;
     public static final int Unk5000_OBLACACDKKE = 6846;
     public static final int Unk5000_ANPBAFOLEOI = 4152;
@@ -1602,7 +1618,6 @@ public class PacketOpcodes {
     public static final int Unk5000_PIFJECJDGON = 3045;
     public static final int Unk5000_KIALANHPFBG = 28300;
     public static final int Unk5000_HKNFCFKIFGO = 20963;
-    public static final int Unk5000_FMCPPLAODNL = 25062;
     public static final int Unk5000_MDDHJEMINCI = 1747;
     public static final int Unk5000_NCOMLLOKMNK = 22669;
     public static final int Unk5000_FOIMICAJIMB = 22083;
@@ -1758,7 +1773,6 @@ public class PacketOpcodes {
     public static final int Unk5000_AANGLNBIFDK = 6525;
     public static final int Unk5000_LPBFOIOADFD = 26587;
     public static final int Unk5000_CNJLKINIHCI = 22550;
-    public static final int Unk5000_ANDKBIBKGCG = 27981;
     public static final int Unk5000_KKMEDIKMHIP = 2075;
     public static final int Unk5000_DPFMJHIOBLH = 329;
     public static final int Unk5000_APOMENOMDIF = 22413;
@@ -1793,7 +1807,6 @@ public class PacketOpcodes {
     public static final int Unk5000_FMCKLLCHFEJ = 5237;
     public static final int Unk5000_LDAEMPFAHIG = 23787;
     public static final int Unk5000_CIJGIMLAFHL = 26882;
-    public static final int Unk5000_PJGKEAKACJK = 7799;
     public static final int Unk5000_ENKOBNIHCML = 29436;
     public static final int Unk5000_NOJNDKFJFHM = 4226;
     public static final int Unk5000_IABAANILCCJ = 24839;
@@ -1966,7 +1979,6 @@ public class PacketOpcodes {
     public static final int Unk5000_JFBFGACBOEM = 20463;
     public static final int Unk5000_OIHPLAEKINM = 3917;
     public static final int Unk5000_LNOFNLDPNIF = 27454;
-    public static final int Unk5000_FMAPBHLDPBD = 6706;
     public static final int Unk5000_EGKEPOKKAAA = 1165;
     public static final int Unk5000_LAFOLIACPPG = 7876;
     public static final int Unk5000_ANBNAKFDLHA = 5044;
@@ -2340,7 +2352,6 @@ public class PacketOpcodes {
     public static final int Unk5000_PPCFAKHEBJF = 23720;
     public static final int Unk5000_BAHDFMCPJLG = 4649;
     public static final int Unk5000_KKJBLGDEELL = 1384;
-    public static final int Unk5000_NEOEIJNECEH = 21992;
     public static final int Unk5000_DGIKHPBMLEL = 902;
     public static final int Unk5000_AELAGPGEBDL = 22837;
     public static final int Unk5000_LBOALHPEGBF = 24250;
@@ -2352,7 +2363,6 @@ public class PacketOpcodes {
     public static final int Unk5000_DDJADNEOLLG = 2684;
     public static final int Unk5000_HFDPPHKHACL = 28938;
     public static final int Unk5000_PCAFGAMHFOA = 29682;
-    public static final int Unk5000_AEPJNEHPJHP = 25392;
     public static final int Unk5000_BDDOCDINBPM = 26130;
     public static final int Unk5000_LBFNFGHKEGG = 20846;
     public static final int Unk5000_JFDAJGHALKK = 7130;
@@ -2572,7 +2582,6 @@ public class PacketOpcodes {
     public static final int Unk5000_DKHMAEDALKK = 9555;
     public static final int Unk5000_DJNNALCNMKP = 25287;
     public static final int Unk5000_GFBFPKMDEDP = 26571;
-    public static final int Unk5000_HDCDDPLOKLC = 5978;
     public static final int Unk5000_IDCEGFNNCBN = 2120;
     public static final int Unk5000_DEFIOGBONGL = 25223;
     public static final int Unk5000_KPLJMNAMGKO = 23980;
@@ -2583,7 +2592,6 @@ public class PacketOpcodes {
     public static final int Unk5000_BPKPDOADDAG = 22552;
     public static final int Unk5000_GCNGLODDJLN = 6833;
     public static final int Unk5000_GDIBHLIINCN = 7773;
-    public static final int Unk5000_INEHOMJJIMF = 2350;
     public static final int Unk5000_KCNPGGIONDN = 8424;
     public static final int Unk5000_MEFALJIMBDB = 21021;
     public static final int Unk5000_ODOHNIDKNLH = 435;
@@ -2612,7 +2620,6 @@ public class PacketOpcodes {
     public static final int Unk5000_FLOCJFMHHLM = 22577;
     public static final int Unk5000_CBAEOBNLDCL = 25969;
     public static final int Unk5000_FCNGIOKBJMI = 2375;
-    public static final int Unk5000_ADAMAMEFEDJ = 7713;
     public static final int Unk5000_PODDHNLBPBD = 9085;
     public static final int Unk5000_HKPGJJFIFLB = 21184;
     public static final int Unk5000_DPPKOJFFMNN = 25111;
@@ -2668,7 +2675,6 @@ public class PacketOpcodes {
     public static final int Unk5000_AALCKDHDOAP = 6773;
     public static final int Unk5000_OGEBHFHKGBK = 20931;
     public static final int Unk5000_INKIJKPKNAE = 6835;
-    public static final int Unk5000_BNLDBGENONP = 3518;
     public static final int Unk5000_FKCLFEGJFKC = 26239;
     public static final int Unk5000_ECFIMAIENAL = 7320;
     public static final int Unk5000_INBPKAEHJPC = 8065;
@@ -2680,7 +2686,6 @@ public class PacketOpcodes {
     public static final int Unk5000_DJECDJNNCHK = 9236;
     public static final int Unk5000_MOAFFPHKLDK = 3391;
     public static final int Unk5000_LEALHMKCOJC = 4848;
-    public static final int Unk5000_MKKNFPDINLB = 28793;
     public static final int Unk5000_MBPFIKHBCHD = 3655;
     public static final int Unk5000_DEPMLMOFHLE = 24038;
     public static final int Unk5000_DNPAHCFPJML = 21263;
@@ -2721,7 +2726,6 @@ public class PacketOpcodes {
     public static final int Unk5000_HHDKJJLBOGD = 28536;
     public static final int Unk5000_CDCHOIKJCDC = 27001;
     public static final int Unk5000_LOAJEPFPCCG = 27098;
-    public static final int Unk5000_BJAGGHLIDDA = 20421;
     public static final int Unk5000_KCFBLAGKDHE = 3225;
     public static final int Unk5000_JIOJPAPJIIO = 3951;
     public static final int Unk5000_EDIKEKJFMAO = 20453;
@@ -2730,7 +2734,6 @@ public class PacketOpcodes {
     public static final int Unk5000_HALENNLPKNK = 20820;
     public static final int Unk5000_EGADPDIMNEJ = 28218;
     public static final int Unk5000_KLFMMCDIADF = 9524;
-    public static final int Unk5000_JGFJOAIHPPP = 2339;
     public static final int Unk5000_BLEJHAAKKLF = 29025;
     public static final int Unk5000_ALCMAOAEIAK = 3810;
     public static final int Unk5000_MMHMMDFOIMB = 2530;
@@ -2903,7 +2906,6 @@ public class PacketOpcodes {
     public static final int Unk5000_IPBCDNBNGEP = 2195;
     public static final int Unk5000_JOKCCLIHDDC = 26082;
     public static final int Unk5000_DGAJJPBPFKC = 9533;
-    public static final int Unk5000_PBNELDLEALH = 20908;
     public static final int Unk5000_JHLCOKCMEIF = 28476;
     public static final int Unk5000_NJMNLOGDOIA = 226;
     public static final int Unk5000_IPKDKPCHGDN = 24058;
@@ -3128,13 +3130,11 @@ public class PacketOpcodes {
     public static final int PlayerEnterChildMapLayerNotify = 1;
     public static final int PlayerEnterMapLayerNotify = 1;
     public static final int SkipPlayerGameTimeReq = 1;
-    public static final int HomeAvatarTalkReq = 1;
     public static final int GetOnlinePlayerInfoReq = 1;
     public static final int GetShopmallDataRsp = 1;
     public static final int ServerAnnounceRevokeNotify = 1;
     public static final int HomeSaveBlueprintToSlotReq = 1;
     public static final int HomeCreateBlueprintReq = 1;
-    public static final int GetQuestLackingResourceRsp = 1;
     public static final int GetHomeExchangeWoodInfoRsp = 1;
     public static final int PlayerChatRsp = 1;
     public static final int GetWidgetQuickSlotListRsp = 1;
@@ -3273,11 +3273,6 @@ public class PacketOpcodes {
     public static final int AvatarSkillDepotChangeNotify = 1;
     public static final int AvatarSkillInfoNotify = 1;
     public static final int AvatarSkillMaxChargeCountNotify = 1;
-    public static final int AvatarSkillUpgradeReq = 1;
-    public static final int AvatarSkillUpgradeRsp = 1;
-    public static final int AvatarUnlockTalentNotify = 1;
-    public static final int AvatarUpgradeReq = 1;
-    public static final int AvatarUpgradeRsp = 1;
     public static final int BackPlayCustomDungeonOfficialReq = 1;
     public static final int BackPlayCustomDungeonOfficialRsp = 1;
     public static final int BackRebornGalleryReq = 1;
@@ -3356,8 +3351,6 @@ public class PacketOpcodes {
     public static final int BuyGoodsRsp = 1;
     public static final int BuyResinReq = 1;
     public static final int BuyResinRsp = 1;
-    public static final int CalcWeaponUpgradeReturnItemsReq = 1;
-    public static final int CalcWeaponUpgradeReturnItemsRsp = 1;
     public static final int CanUseSkillNotify = 1;
     public static final int CancelCityReputationRequestReq = 1;
     public static final int CancelCityReputationRequestRsp = 1;
@@ -4549,8 +4542,6 @@ public class PacketOpcodes {
     public static final int PushTipsChangeNotify = 1;
     public static final int PushTipsReadFinishReq = 1;
     public static final int PushTipsReadFinishRsp = 1;
-    public static final int QueryPathReq = 1;
-    public static final int QueryPathRsp = 1;
     public static final int QuestCreateEntityReq = 1;
     public static final int QuestCreateEntityRsp = 1;
     public static final int QuestDelNotify = 1;
@@ -4771,8 +4762,6 @@ public class PacketOpcodes {
     public static final int SetCoopChapterViewedRsp = 1;
     public static final int SetCurExpeditionChallengeIdReq = 1;
     public static final int SetCurExpeditionChallengeIdRsp = 1;
-    public static final int SetEquipLockStateReq = 1;
-    public static final int SetEquipLockStateRsp = 1;
     public static final int SetFriendEnterHomeOptionRsp = 1;
     public static final int SetH5ActivityRedDotTimestampReq = 1;
     public static final int SetH5ActivityRedDotTimestampRsp = 1;
@@ -5043,8 +5032,6 @@ public class PacketOpcodes {
     public static final int UnlockNameCardNotify = 1;
     public static final int UnlockPersonalLineReq = 1;
     public static final int UnlockPersonalLineRsp = 1;
-    public static final int UnlockTransPointReq = 1;
-    public static final int UnlockTransPointRsp = 1;
     public static final int UnlockedFurnitureFormulaDataNotify = 1;
     public static final int UnlockedFurnitureSuiteDataNotify = 1;
     public static final int UnmarkEntityInMinMapNotify = 1;
@@ -5099,12 +5086,6 @@ public class PacketOpcodes {
     public static final int WatcherEventStageNotify = 1;
     public static final int WatcherEventTypeNotify = 1;
     public static final int WaterSpritePhaseFinishNotify = 1;
-    public static final int WeaponAwakenReq = 1;
-    public static final int WeaponAwakenRsp = 1;
-    public static final int WeaponPromoteReq = 1;
-    public static final int WeaponPromoteRsp = 1;
-    public static final int WeaponUpgradeReq = 1;
-    public static final int WeaponUpgradeRsp = 1;
     public static final int WidgetActiveChangeNotify = 1;
     public static final int WidgetCaptureAnimalReq = 1;
     public static final int WidgetCaptureAnimalRsp = 1;

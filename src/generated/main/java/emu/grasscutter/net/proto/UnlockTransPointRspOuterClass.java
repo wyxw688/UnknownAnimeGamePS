@@ -25,11 +25,6 @@ public final class UnlockTransPointRspOuterClass {
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 21510
-   * Obf: IBGGKMKPHOB
-   * </pre>
-   *
    * Protobuf type {@code UnlockTransPointRsp}
    */
   public static final class UnlockTransPointRsp extends
@@ -278,11 +273,6 @@ public final class UnlockTransPointRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 21510
-     * Obf: IBGGKMKPHOB
-     * </pre>
-     *
      * Protobuf type {@code UnlockTransPointRsp}
      */
     public static final class Builder extends
