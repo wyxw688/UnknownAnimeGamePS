@@ -2,7 +2,7 @@
 - Contributors are always welcome
 - Updated to 5.0
 
-English | [简体中文](README_zh-cn.md)
+English | [简体中文](README_zh-CN.md)
 
 ## Current features
 
@@ -12,6 +12,7 @@ English | [简体中文](README_zh-cn.md)
 * Friends list
 * Teleportation
 * Gacha system
+* Activity (-)
 * Co-op *partially* works (-)
 * Spawning monsters via console
 * Inventory features (receiving items/characters, upgrading items/characters, etc)
