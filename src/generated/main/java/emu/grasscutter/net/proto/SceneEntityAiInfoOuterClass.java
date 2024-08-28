@@ -169,10 +169,6 @@ public final class SceneEntityAiInfoOuterClass {
     boolean getNMECJFPHFGH();
   }
   /**
-   * <pre>
-   * Obf: NGIAJBBLFGD
-   * </pre>
-   *
    * Protobuf type {@code SceneEntityAiInfo}
    */
   public static final class SceneEntityAiInfo extends
@@ -952,10 +948,6 @@ public final class SceneEntityAiInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NGIAJBBLFGD
-     * </pre>
-     *
      * Protobuf type {@code SceneEntityAiInfo}
      */
     public static final class Builder extends

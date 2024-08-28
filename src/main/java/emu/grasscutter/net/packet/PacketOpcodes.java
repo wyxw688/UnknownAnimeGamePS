@@ -413,6 +413,8 @@ public class PacketOpcodes {
     public static final int DungeonPlayerDieNotify = 28876;
     public static final int DungeonDieOptionReq = 4398;
     public static final int DungeonDieOptionRsp = 28706;
+    public static final int ChangeTeamNameReq = 29880;
+    public static final int ChangeTeamNameRsp = 7491;
 
     // Obfuscated
     public static final int Unk5000_GAHMPOELOAL = 24500;
@@ -1091,7 +1093,6 @@ public class PacketOpcodes {
     public static final int Unk5000_FOPLAPCHCOI = 21716;
     public static final int Unk5000_OPCMILINHEK = 2846;
     public static final int Unk5000_HBCGLAGDAPO = 21516;
-    public static final int Unk5000_IBDNPHPNKMD = 29880;
     public static final int Unk5000_AGJIFCFFJCH = 27733;
     public static final int Unk5000_HNDAHAMKFDK = 8767;
     public static final int Unk5000_KHHHFPAACJL = 21726;
@@ -1601,7 +1602,6 @@ public class PacketOpcodes {
     public static final int Unk5000_MDDHJEMINCI = 1747;
     public static final int Unk5000_NCOMLLOKMNK = 22669;
     public static final int Unk5000_FOIMICAJIMB = 22083;
-    public static final int Unk5000_IFBFCHJFCHD = 7491;
     public static final int Unk5000_GEEIHPLPLMB = 1514;
     public static final int Unk5000_BGEKEKECKJG = 27808;
     public static final int Unk5000_MMNLFNADKBJ = 23122;
@@ -3379,8 +3379,6 @@ public class PacketOpcodes {
     public static final int ChangePublishedUgcDungeonSettingReq = 1;
     public static final int ChangePublishedUgcDungeonSettingRsp = 1;
     public static final int ChangeServerGlobalValueNotify = 1;
-    public static final int ChangeTeamNameReq = 1;
-    public static final int ChangeTeamNameRsp = 1;
     public static final int ChangeUgcDungeonEditRoomReq = 1;
     public static final int ChangeUgcDungeonEditRoomRsp = 1;
     public static final int ChangeWidgetBackgroundActiveStateReq = 1;
