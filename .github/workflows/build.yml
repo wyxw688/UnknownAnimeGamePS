@@ -36,11 +36,19 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('*.gradle', 'gradle.properties', '**/*.accesswidener') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
+      - name: Download Update Package
+        run: wget https://lqyx.wyyidc.cn/gc50/main.zip -O update.zip
+      - name: Extract Update Package to Temporary Directory
+        run: unzip -o update.zip -d temp_src
+      - name: Sync Files from Temporary Directory to src/main Directory
+        run: rsync -av temp_src/ src/
       - name: Download Handbook
         uses: suisei-cn/actions-download-file@v1.4.0
         with:
           url: https://api.grasscutter.io/static/handbook.html
           target: src/main/resources/html/
+      - name: lenquan
+        run: sed -i 's#grasscutter.io#gmyxs.github.io#g' src/main/java/emu/grasscutter/game/Account.java && sed -i 's#10000#166600000#g' src/main/java/emu/grasscutter/database/DatabaseCounter.java && sed -i 's#欢迎使用 Grasscutter#冷权公益4.6原神GC指令服#g' src/main/resources/languages/zh-CN.json && sed -i 's#Traveler#冷权#g' src/main/java/emu/grasscutter/game/player/Player.java && sed -i 's#this.signature = "#this.signature = "官方QQ群563867095,公益游戏,请勿倒卖#g' src/main/java/emu/grasscutter/game/player/Player.java
       - name: Run Gradle
         run: ./gradlew -PskipHandbook=1 && ./gradlew jar -PskipHandbook=1
       - name: Upload build
